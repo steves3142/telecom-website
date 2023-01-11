@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import type { NextPage} from 'next'
+import type { NextPage } from 'next';
+import Header from '../components/Header'
 
 const Home: NextPage = () => {
   return (
@@ -8,7 +8,11 @@ const Home: NextPage = () => {
     <Head>
       <title>MSNT Telecom</title>
     </Head>
-    This is a test
+    
+    <header>
+      <Header />
+    </header>
+
     </div>
   )
 };
