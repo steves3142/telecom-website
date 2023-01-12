@@ -1,17 +1,17 @@
 const navigation = {
     about: [
-      { name: 'History', href: '#' },
-      { name: 'Locations', href: '#' },
-      { name: 'Leadership', href: '#' },
+      { name: 'History', href: '/about' },
+      { name: 'Locations', href: '/about' },
+      { name: 'Leadership', href: '/about' },
     ],
     fiber: [
-      { name: 'Solutions', href: '#' },
-      { name: 'Services', href: '#' },
+      { name: 'Solutions', href: '/fiber-services' },
+      { name: 'Services', href: '/fiber-services' },
       { name: 'Case Studies', href: '#' },
     ],
     wireless: [
-      { name: 'Solutions', href: '#' },
-      { name: 'Services', href: '#' },
+      { name: 'Solutions', href: '/wireless-services' },
+      { name: 'Services', href: '/wireless-services' },
       { name: 'Blog', href: '#' },
     ],
     terms: [

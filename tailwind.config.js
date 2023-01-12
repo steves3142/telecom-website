@@ -6,9 +6,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'hero-pattern': "url('images/NC_tower.jpg')",
-      }
     },
   },
   plugins: [

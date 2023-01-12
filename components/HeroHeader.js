@@ -1,14 +1,15 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Link from 'next/link'; 
 import { ChevronRightIcon } from '@heroicons/react/20/solid'
 
 
 const navigation = [
-    { name: 'About', href: '#' },
-    { name: 'Wireless Services', href: '#' },
-    { name: 'Fiber Services', href: '#' },
-    { name: 'Contact', href: '#' },
+    { name: 'About', href: `${process.env.NEXT_PUBLIC_BASE_URL}/about`, current: false },
+    { name: 'Wireless Services',  href: `${process.env.NEXT_PUBLIC_BASE_URL}/wireless-services`, current: false },
+    { name: 'Fiber Services', href: `${process.env.NEXT_PUBLIC_BASE_URL}/fiber-services`, current: false },
+    { name: 'Contact', href: `${process.env.NEXT_PUBLIC_BASE_URL}/contact-us`, current: false },
 ]
 
 function HeroHeader() {
@@ -19,14 +20,14 @@ function HeroHeader() {
                     <nav className="relative mx-auto flex max-w-7xl items-center justify-between px-6" aria-label="Global">
                         <div className="flex flex-1 items-center">
                             <div className="flex w-full items-center justify-between md:w-auto">
-                                <a href="#">
-                                    <span className="sr-only">Your Company</span>
+                                <Link href="/">
+                                    {/* <span className="sr-only">Your Company</span> */}
                                     <img
                                         className="h-8 w-auto sm:h-10"
                                         src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                                         alt=""
                                     />
-                                </a>
+                                 </Link>
                                 <div className="-mr-2 flex items-center md:hidden">
                                     <Popover.Button className="focus-ring-inset inline-flex items-center justify-center rounded-md bg-gray-900 p-2 text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-white">
                                         <span className="sr-only">Open main menu</span>
@@ -58,11 +59,13 @@ function HeroHeader() {
                         <div className="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5">
                             <div className="flex items-center justify-between px-5 pt-4">
                                 <div>
+                                    <Link href="/">
                                     <img
                                         className="h-8 w-auto"
                                         src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                                         alt=""
                                     />
+                                    </Link>
                                 </div>
                                 <div className="-mr-2">
                                     <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600">
