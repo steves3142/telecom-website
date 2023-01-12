@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .bg-hero {
+        background: url('../images/NC_tower.jpg')
+    }
+  }
