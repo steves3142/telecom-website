@@ -9,12 +9,12 @@ export default function Contact() {
     return (
         <div>
             <Header />
-            <div className="bg-gray-700">
+            {/* <div className="bg-gray-700">
                 <HeroHeader />
-            </div>
+            </div> */}
 
             <HeroContact />
-            
+
             <div className="bg-gray-100">
                 <div className="mx-auto max-w-7xl py-16 px-6 sm:py-24 lg:px-8">
                     <div className="relative bg-white shadow-xl">
@@ -121,8 +121,7 @@ export default function Contact() {
                                 </div>
                                 <h3 className="text-lg font-medium text-white">Contact information</h3>
                                 <p className="mt-6 max-w-3xl text-base text-indigo-50">
-                                    Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor
-                                    lacus arcu.
+                                    Drop us a line and we'll get back to you within 48 hours. 
                                 </p>
                                 <dl className="mt-8 space-y-6">
                                     <dt>
@@ -130,14 +129,19 @@ export default function Contact() {
                                     </dt>
                                     <dd className="flex text-base text-indigo-50">
                                         <PhoneIcon className="h-6 w-6 flex-shrink-0 text-indigo-200" aria-hidden="true" />
-                                        <span className="ml-3">+1 (555) 123-4567</span>
+                                        <span className="ml-3">+1 (973) 332-6258</span>
                                     </dd>
+                                    <dd className="flex text-base text-indigo-50">
+                                        <PhoneIcon className="h-6 w-6 flex-shrink-0 text-indigo-200" aria-hidden="true" />
+                                        <span className="ml-3">+1 (862) 257-3336</span>
+                                    </dd>
+
                                     <dt>
                                         <span className="sr-only">Email</span>
                                     </dt>
                                     <dd className="flex text-base text-indigo-50">
                                         <EnvelopeIcon className="h-6 w-6 flex-shrink-0 text-indigo-200" aria-hidden="true" />
-                                        <span className="ml-3">support@workcation.com</span>
+                                        <span className="ml-3">msusanibar@msnt-telecom.com</span>
                                     </dd>
                                 </dl>
                                 <ul role="list" className="mt-8 flex space-x-12">

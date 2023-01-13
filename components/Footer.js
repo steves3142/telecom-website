@@ -2,7 +2,7 @@ const navigation = {
     about: [
       { name: 'History', href: '/about' },
       { name: 'Locations', href: '/about' },
-      { name: 'Leadership', href: '/about' },
+      { name: 'Contact', href: '/contact-us' },
     ],
     fiber: [
       { name: 'Solutions', href: '/fiber-services' },
@@ -16,7 +16,7 @@ const navigation = {
     ],
     terms: [
       { name: 'Overview', href: '#' },
-      { name: 'Certifications', href: '#' },
+      { name: 'Certifications', href: '/certifications' },
     ],
     social: [
       {

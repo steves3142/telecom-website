@@ -18,4 +18,7 @@
     .bg-hero-contact {
         background: url('https://as2.ftcdn.net/v2/jpg/03/79/67/39/1000_F_379673965_mF3j32dlklJtTr58ib4xtLGvyPzH6NJj.jpg')
     }
+    .bg-hero-cert {
+        background: url('../images/tower_arial_view.jpg')
+    }
   }
