@@ -2,9 +2,10 @@ import HeroHeader from "./HeroHeader"
 
 function HeroAbout() {
     return (
-        <div className='bg-hero-about'>
-            <main>
+        <div className='bg-hero-about py-52'>
             <HeroHeader />
+            <main>
+
                 <div className="pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14">
                     <div className="mx-40 max-w-6xl lg:px-8">
                         <div className="lg:grid lg:grid-cols-2 lg:gap-8">

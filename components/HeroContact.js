@@ -3,7 +3,7 @@ import HeroHeader from "./HeroHeader";
 
 function HeroContact() {
     return (
-        <div className='bg-hero-contact'>
+        <div className='bg-hero-contact py-52'>
             <main>
             <HeroHeader />
                 <div className="pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14">

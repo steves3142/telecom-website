@@ -3,7 +3,7 @@ import HeroHeader from "./HeroHeader";
 
 function HeroFiber() {
     return (
-        <div className='bg-hero-fiber'>
+        <div className='bg-hero-fiber py-52'>
             <main>
             <HeroHeader />
                 <div className="pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14">
