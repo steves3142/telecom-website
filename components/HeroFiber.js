@@ -1,22 +1,22 @@
-import HeroHeader from 'components/HeroHeader.js'
+import HeroHeader from "./HeroHeader";
 
-function Hero() {
+
+function HeroFiber() {
     return (
-        <div className='bg-hero'>
+        <div className='bg-hero-fiber'>
             <main>
             <HeroHeader />
                 <div className="pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14">
-
                     <div className="mx-40 max-w-6xl lg:px-8">
                         <div className="lg:grid lg:grid-cols-2 lg:gap-8">
                             <div className="">
                                 <div className="lg:py-24">
                                     <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:mt-6 xl:text-6xl">
-                                        <span className="block">A better way to</span>
-                                        <span className="block text-indigo-400">Build Telecom Infrastructure</span>
+                                        <span className="block">Fiber</span>
+                                        <span className="block text-indigo-400">Services</span>
                                     </h1>
                                     <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                                        We'here to guide you every step of the way.
+                                        
                                     </p>
                                 </div>
                             </div>
@@ -40,4 +40,4 @@ function Hero() {
     )
 }
 
-export default Hero
+export default HeroFiber
