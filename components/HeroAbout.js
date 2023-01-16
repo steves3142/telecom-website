@@ -2,7 +2,7 @@ import HeroHeader from "./HeroHeader"
 
 function HeroAbout() {
     return (
-        <div className='bg-hero-about py-52'>
+        <div className='bg-hero-about pb-96'>
             <HeroHeader />
             <main>
 

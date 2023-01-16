@@ -18,7 +18,7 @@ function Hero() {
                                             <span className="block text-indigo-400">Build Telecom Infrastructure</span>
                                         </h1>
                                         <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                                            We'here to guide you every step of the way.
+                                            We're here to help you build to new heights.
                                         </p>
                                     </div>
                                 </div>
@@ -35,7 +35,6 @@ function Hero() {
                             </div>
                         </div>
                     </div>
-
                     {/* More main page content here... */}
                 </main>
             </div>
