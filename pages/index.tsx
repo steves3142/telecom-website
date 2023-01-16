@@ -3,7 +3,8 @@ import type { NextPage } from 'next';
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
-import Banner from '../components/Banner'
+import Banner from '../components/Banner.js'
+import React from 'react';
 
 const Home: NextPage = () => {
   return (
@@ -20,7 +21,7 @@ const Home: NextPage = () => {
       <Hero />
 
       {/* Banner */}
-      <main className="max-w-md">
+      <main className="w-500 h-500">
       <Banner />
       </main>
 
