@@ -21,4 +21,10 @@
     .bg-hero-cert {
         background: url('../images/tower_arial_view.jpg')
     }
+    .bg-about-us {
+        background: url('../images/tower_base.jpg');
+        /* width: 200px;
+        height: 300px; */
+        object-fit: fill;
+    }
   }
