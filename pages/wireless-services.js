@@ -265,7 +265,7 @@ export default function Wireless() {
               <h2 className="sr-only">Plans</h2>
 
               {/* Toggle */}
-              <div className="mt-12 flex justify-center sm:mt-16">
+              {/* <div className="mt-12 flex justify-center sm:mt-16">
                 <div className="flex rounded-lg bg-indigo-700 p-0.5">
                   <button
                     type="button"
@@ -280,7 +280,7 @@ export default function Wireless() {
                     Yearly billing
                   </button>
                 </div>
-              </div>
+              </div> */}
 
               {/* Cards */}
               <div className="relative mx-auto mt-8 max-w-2xl px-4 pb-8 sm:mt-12 sm:px-6 lg:max-w-7xl lg:px-8 lg:pb-0">
@@ -316,15 +316,20 @@ export default function Wireless() {
                                 'text-4xl font-bold tracking-tight'
                               )}
                             >
-                              ${plan.priceMonthly}
+                              {/* ${plan.priceMonthly} */}
+
                             </p>
+
                             <div className="ml-4">
-                              <p className={classNames(plan.featured ? 'text-gray-700' : 'text-white', 'text-sm')}>
+                              {/* <p className={classNames(plan.featured ? 'text-gray-700' : 'text-white', 'text-sm')}>
                                 USD / mo
                               </p>
                               <p className={classNames(plan.featured ? 'text-gray-500' : 'text-indigo-200', 'text-sm')}>
                                 Billed yearly (${plan.priceYearly})
-                              </p>
+                              </p> */}
+
+
+
                             </div>
                           </div>
                           <a
@@ -336,7 +341,8 @@ export default function Wireless() {
                               'mt-6 w-full inline-block py-2 px-8 border border-transparent rounded-md shadow-sm text-center text-sm font-medium sm:mt-0 sm:w-auto lg:mt-6 lg:w-full'
                             )}
                           >
-                            Buy {plan.title}
+                            {/* Buy  */}
+                            {plan.title}
                           </a>
                         </div>
                       </div>

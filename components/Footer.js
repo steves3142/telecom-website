@@ -15,7 +15,7 @@ const navigation = {
       { name: 'Blog', href: '#' },
     ],
     terms: [
-      { name: 'Overview', href: '#' },
+      { name: 'Overview', href: '/terms' },
       { name: 'Certifications', href: '/certifications' },
     ],
     social: [
