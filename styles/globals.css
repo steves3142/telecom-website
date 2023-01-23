@@ -7,7 +7,7 @@
         background: url('../images/NC_tower.jpg')
     }
     .bg-hero-about {
-        background: url('https://as1.ftcdn.net/v2/jpg/03/87/41/92/1000_F_387419260_ViC98aQ3UJKz1mms4g0jHiGwkMW91NXM.jpg')
+        z-index: -1;
     }
     .bg-hero-wireless {
         background: url('https://as1.ftcdn.net/v2/jpg/02/74/57/12/1000_F_274571259_ajou4XbAcgX4Vy4za31omw6p5QBT9bYZ.jpg')

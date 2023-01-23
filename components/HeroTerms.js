@@ -33,8 +33,6 @@ function HeroTerms() {
                         </div>
                     </div>
                 </div>
-
-                {/* More main page content here... */}
             </main>
         </div>
     )

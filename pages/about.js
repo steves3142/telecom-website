@@ -17,10 +17,9 @@ const stats = [
 export default function About() {
     return (
         <div>
-            <Header />
-            {/* <div className="bg-gray-700">
-            <HeroHeader />
-            </div> */}
+            <header className="sticky top-0 z-10">
+                <Header />
+            </header>
 
             <HeroAbout />
 

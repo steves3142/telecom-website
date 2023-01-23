@@ -1,11 +1,19 @@
 import HeroHeader from "./HeroHeader"
+import AboutUsHeader from "../images/towerLineUp.jpeg"
+import Image from "next/image"
 
 function HeroAbout() {
     return (
-        <div className='bg-hero-about pb-96'>
-            <HeroHeader />
-            <main>
+        // <div className='bg-hero-about pb-96'>
+        <div>
+            <div className="relative">
+                <Image className="bg-hero-about" src={AboutUsHeader} />
+                <div className="absolute top-0 left-0 right-0">
+                    <HeroHeader />
+                </div>
+            </div>
 
+            <main>
                 <div className="pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14">
                     <div className="mx-40 max-w-6xl lg:px-8">
                         <div className="lg:grid lg:grid-cols-2 lg:gap-8">
@@ -16,7 +24,7 @@ function HeroAbout() {
                                         <span className="block text-indigo-400">Us</span>
                                     </h1>
                                     <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                                        
+
                                     </p>
                                 </div>
                             </div>

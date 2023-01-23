@@ -8,11 +8,9 @@ import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 export default function Contact() {
     return (
         <div>
-            <Header />
-            {/* <div className="bg-gray-700">
-                <HeroHeader />
-            </div> */}
-
+            <header className="sticky top-0 z-1">
+                <Header />
+            </header>
             <HeroContact />
 
             <div className="bg-gray-100">

@@ -7,13 +7,10 @@ import HeroCert from "../components/HeroCert";
 export default function Certifications() {
     return (
         <div>
-            <Header />
-            {/* <div className="bg-gray-700">
-            <HeroHeader />
-            </div> */}
+            <header className="sticky top-0 z-1">
+                <Header />
+            </header>
             <HeroCert />
-
-
 
             <div className="relative overflow-hidden bg-white py-16">
                 <div className="hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full lg:[overflow-anchor:none]">
@@ -126,16 +123,16 @@ export default function Certifications() {
                             <li>TRAFFIC CONTROL & FLAG PERSONNEL</li>
                         </ul>
                         <p className="mt-8 text-xl leading-8 text-gray-500">
-                          All personnel who perform controlled descent must also have satisfactorily completed the following safety training 
-                          courses as offered by the Company(s):
+                            All personnel who perform controlled descent must also have satisfactorily completed the following safety training
+                            courses as offered by the Company(s):
                         </p>
                         <ul className="mt-8 text-xl leading-8 text-gray-500" role="list">
-                            <li>FALL PROTECTION (through COMTRAIN or equivalent) – Instructor; Authorized Climber & Rescuer; Competent Climber 
+                            <li>FALL PROTECTION (through COMTRAIN or equivalent) – Instructor; Authorized Climber & Rescuer; Competent Climber
                                 & Competent Rigger</li>
                             <li>NWSA – TTT-1 & TTT-2</li>
                         </ul>
                         <p className="mt-8 text-xl leading-8 text-gray-500">
-                        All personnel who operate Aerial Lift equipment or Forklifts must be certified as operators of that equipment.
+                            All personnel who operate Aerial Lift equipment or Forklifts must be certified as operators of that equipment.
                         </p>
                         {/* <blockquote>
               <p>
