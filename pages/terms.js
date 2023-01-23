@@ -108,22 +108,6 @@ export default function Contact() {
                             with the revisions taking effect as of the date of its posting on the website. MSNT reserves the right to change
                             any information on this website at any time, without notice.
                         </p>
-                        {/* <blockquote>
-              <p>
-                Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique
-                pellentesque. Blandit amet, sed aenean erat arcu morbi.
-              </p>
-            </blockquote> */}
-                        {/* <figure>
-              <img
-                className="w-full rounded-lg"
-                src=""
-                alt=""
-                width={1310}
-                height={873}
-              />
-              <figcaption>Sagittis scelerisque nulla cursus in enim consectetur quam.</figcaption>
-            </figure> */}
                     </div>
                 </div>
             </div>

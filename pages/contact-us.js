@@ -179,7 +179,7 @@ export default function Contact() {
 
                             {/* Contact form */}
                             <div className="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
-                                <h3 className="text-lg font-medium text-gray-900">Send us a message</h3>
+                                <h3 className="text-lg font-medium text-gray-900">Get In Touch</h3>
                                 <form action="#" method="POST" className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                                     <div>
                                         <label htmlFor="first-name" className="block text-sm font-medium text-gray-900">
@@ -228,9 +228,6 @@ export default function Contact() {
                                             <label htmlFor="phone" className="block text-sm font-medium text-gray-900">
                                                 Phone
                                             </label>
-                                            <span id="phone-optional" className="text-sm text-gray-500">
-                                                Optional
-                                            </span>
                                         </div>
                                         <div className="mt-1">
                                             <input
@@ -240,6 +237,19 @@ export default function Contact() {
                                                 autoComplete="tel"
                                                 className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                                                 aria-describedby="phone-optional"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="sm:col-span-2">
+                                        <label htmlFor="business" className="block text-sm font-medium text-gray-900">
+                                            Business Name
+                                        </label>
+                                        <div className="mt-1">
+                                            <input
+                                                type="text"
+                                                name="business"
+                                                id="business"
+                                                className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                                             />
                                         </div>
                                     </div>
@@ -259,7 +269,7 @@ export default function Contact() {
                                     <div className="sm:col-span-2">
                                         <div className="flex justify-between">
                                             <label htmlFor="message" className="block text-sm font-medium text-gray-900">
-                                                Message
+                                                How can we help you?
                                             </label>
                                             <span id="message-max" className="text-sm text-gray-500">
                                                 Max. 500 characters
