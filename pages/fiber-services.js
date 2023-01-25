@@ -206,7 +206,7 @@ function classNames(...classes) {
 export default function Fiber() {
   return (
     <div>
-      <header className="sticky top-0 z-1">
+      <header className="sticky top-0 z-10">
         <Header />
       </header>
       <HeroFiber />
@@ -231,23 +231,6 @@ export default function Fiber() {
 
                 <h2 className="sr-only">Plans</h2>
 
-                {/* Toggle */}
-                {/* <div className="mt-12 flex justify-center sm:mt-16">
-                <div className="flex rounded-lg bg-indigo-700 p-0.5">
-                  <button
-                    type="button"
-                    className="whitespace-nowrap rounded-md border-indigo-700 bg-white py-2 px-6 text-sm font-medium text-indigo-700 shadow-sm hover:bg-indigo-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-700"
-                  >
-                    Monthly billing
-                  </button>
-                  <button
-                    type="button"
-                    className="ml-0.5 whitespace-nowrap rounded-md border border-transparent py-2 px-6 text-sm font-medium text-indigo-200 hover:bg-indigo-800 focus:z-10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-700"
-                  >
-                    Yearly billing
-                  </button>
-                </div>
-              </div> */}
 
                 {/* Cards */}
                 <div className="relative mx-auto mt-8 max-w-2xl px-4 pb-8 sm:mt-12 sm:px-6 lg:max-w-7xl lg:px-8 lg:pb-0">
@@ -349,9 +332,9 @@ export default function Fiber() {
 
               {/* Feature comparison */}
               <section aria-labelledby="mobile-comparison-heading" className="lg:hidden">
-                <h2 id="mobile-comparison-heading" className="sr-only">
+                {/* <h2 id="mobile-comparison-heading" className="sr-only">
                   Feature comparison
-                </h2>
+                </h2> */}
 
                 <div className="mx-auto mt-16 max-w-2xl space-y-16 px-4 sm:px-6">
                   {plans.map((plan, planIndex) => (
@@ -490,13 +473,6 @@ export default function Fiber() {
 
             </div>
 
-            <section aria-labelledby="comparison-heading" className="lg:block">
-              <h2 className="sr-only">
-                Feature comparison
-              </h2>
-            </section>
-
-
 
             {/* Logos of Wireless Clients*/}
             <div className="mx-auto max-w-2xl py-12 px-4 sm:px-6 lg:max-w-7xl lg:py-32 lg:px-8">
@@ -619,7 +595,7 @@ export default function Fiber() {
             </div>
 
             {/* FAQs */}
-            <section aria-labelledby="faq-heading" className="bg-gray-900">
+            {/* <section aria-labelledby="faq-heading" className="bg-gray-900">
               <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
                 <div className="max-w-2xl lg:mx-auto lg:text-center">
                   <h2 id="faq-heading" className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
@@ -641,7 +617,7 @@ export default function Fiber() {
                   </dl>
                 </div>
               </div>
-            </section>
+            </section> */}
           </div>
         </div>
       </main>

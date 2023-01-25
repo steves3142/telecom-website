@@ -7,7 +7,7 @@ import HeroCert from "../components/HeroCert";
 export default function Certifications() {
     return (
         <div>
-            <header className="sticky top-0 z-1">
+            <header className="sticky top-0 z-10">
                 <Header />
             </header>
             <HeroCert />

@@ -8,7 +8,7 @@ import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 export default function Contact() {
     return (
         <div>
-            <header className="sticky top-0 z-1">
+            <header className="sticky top-0 z-10">
                 <Header />
             </header>
             <HeroContact />

@@ -7,7 +7,7 @@ import Image from "next/image"
 import AboutUsImage from "../images/tower_base.jpg";
 
 const stats = [
-    { label: 'Founded', value: '2010' },
+    { label: 'Founded', value: '2001' },
     // { label: 'Offices', value: '2' },
     { label: 'Completed Projects', value: '500+' },
     // { label: 'Raised', value: '$25M' },

@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 export default function Contact() {
     return (
         <div>
-            <header className="sticky top-0 z-1">
+            <header className="sticky top-0 z-10">
                 <Header />
             </header>
             <HeroTerms />

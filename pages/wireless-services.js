@@ -238,7 +238,7 @@ function classNames(...classes) {
 export default function Wireless() {
   return (
     <div>
-      <header className="sticky top-0 z-1">
+      <header className="sticky top-0 z-10">
         <Header />
       </header>
       <HeroWireless />
@@ -668,7 +668,7 @@ export default function Wireless() {
 
 
             {/* FAQs */}
-            <section aria-labelledby="faq-heading" className="bg-gray-900">
+            {/* <section aria-labelledby="faq-heading" className="bg-gray-900">
               <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
                 <div className="max-w-2xl lg:mx-auto lg:text-center">
                   <h2 id="faq-heading" className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
@@ -690,7 +690,7 @@ export default function Wireless() {
                   </dl>
                 </div>
               </div>
-            </section>
+            </section> */}
           </div>
         </div>
       </main>
