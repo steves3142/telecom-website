@@ -15,7 +15,7 @@ const navigation = [
 const plans = [
   {
     title: 'KEY SERVICES',
-    featured: false,
+    featured: true,
     description: '',
     //   priceMonthly: 5,
     //   priceYearly: 56,
@@ -43,122 +43,7 @@ const plans = [
     ],
   }
 ]
-const features = [
-  {
-    title: 'Tax Savings',
-    tiers: [
-      { title: 'starter', value: true },
-      { title: 'popular', featured: true, value: true },
-      { title: 'intermediate', value: true },
-    ],
-  },
-  {
-    title: 'Easy to use accounting',
-    tiers: [
-      { title: 'starter', value: true },
-      { title: 'popular', featured: true, value: true },
-      { title: 'intermediate', value: true },
-    ],
-  },
-  {
-    title: 'Multi-accounts',
-    tiers: [
-      { title: 'starter', value: '3 accounts' },
-      { title: 'popular', featured: true, value: 'Unlimited accounts' },
-      { title: 'intermediate', value: '7 accounts' },
-    ],
-  },
-  {
-    title: 'Invoicing',
-    tiers: [
-      { title: 'starter', value: '3 invoices' },
-      { title: 'popular', featured: true, value: 'Unlimited invoices' },
-      { title: 'intermediate', value: '10 invoices' },
-    ],
-  },
-  {
-    title: 'Exclusive offers',
-    tiers: [
-      { title: 'starter', value: false },
-      { title: 'popular', featured: true, value: true },
-      { title: 'intermediate', value: true },
-    ],
-  },
-  {
-    title: '6 months free advisor',
-    tiers: [
-      { title: 'starter', value: false },
-      { title: 'popular', featured: true, value: true },
-      { title: 'intermediate', value: true },
-    ],
-  },
-  {
-    title: 'Mobile and web access',
-    tiers: [
-      { title: 'starter', value: false },
-      { title: 'popular', featured: true, value: true },
-      { title: 'intermediate', value: false },
-    ],
-  },
-]
-const perks = [
-  {
-    title: '24/7 customer support',
-    tiers: [
-      { title: 'starter', value: true },
-      { title: 'popular', featured: true, value: true },
-      { title: 'intermediate', value: true },
-    ],
-  },
-  {
-    title: 'Instant notifications',
-    tiers: [
-      { title: 'starter', value: true },
-      { title: 'popular', featured: true, value: true },
-      { title: 'intermediate', value: true },
-    ],
-  },
-  {
-    title: 'Budgeting tools',
-    tiers: [
-      { title: 'starter', value: true },
-      { title: 'popular', featured: true, value: true },
-      { title: 'intermediate', value: true },
-    ],
-  },
-  {
-    title: 'Digital receipts',
-    tiers: [
-      { title: 'starter', value: true },
-      { title: 'popular', featured: true, value: true },
-      { title: 'intermediate', value: true },
-    ],
-  },
-  {
-    title: 'Pots to separate money',
-    tiers: [
-      { title: 'starter', value: false },
-      { title: 'popular', featured: true, value: true },
-      { title: 'intermediate', value: true },
-    ],
-  },
-  {
-    title: 'Free bank transfers',
-    tiers: [
-      { title: 'starter', value: false },
-      { title: 'popular', featured: true, value: true },
-      { title: 'intermediate', value: false },
-    ],
-  },
-  {
-    title: 'Business debit card',
-    tiers: [
-      { title: 'starter', value: false },
-      { title: 'popular', featured: true, value: true },
-      { title: 'intermediate', value: false },
-    ],
-  },
-]
+
 const faqs = [
   {
     id: 1,
@@ -229,8 +114,6 @@ export default function Fiber() {
                   </p>
                 </div>
 
-                <h2 className="sr-only">Plans</h2>
-
 
                 {/* Cards */}
                 <div className="relative mx-auto mt-8 max-w-2xl px-4 pb-8 sm:mt-12 sm:px-6 lg:max-w-7xl lg:px-8 lg:pb-0">
@@ -240,7 +123,7 @@ export default function Fiber() {
                     className="absolute inset-0 top-4 bottom-6 left-8 right-8 hidden rounded-tl-lg rounded-tr-lg bg-indigo-700 lg:block"
                   />
 
-                  <div className="relative space-y-6 lg:grid lg:grid-cols-3 lg:space-y-0">
+                  <div className="relative space-y-6 lg:grid lg:grid-cols-2 lg:space-y-0">
                     {plans.map((plan) => (
                       <div
                         key={plan.title}
@@ -259,27 +142,7 @@ export default function Fiber() {
                             {plan.title}
                           </h3>
                           <div className="flex flex-col items-start sm:flex-row sm:items-center sm:justify-between lg:flex-col lg:items-start">
-                            <div className="mt-3 flex items-center">
-                              <p
-                                className={classNames(
-                                  plan.featured ? 'text-indigo-600' : 'text-white',
-                                  'text-4xl font-bold tracking-tight'
-                                )}
-                              >
-                                {/* ${plan.priceMonthly} */}
-
-
-
-                              </p>
-                              <div className="ml-4">
-                                {/* <p className={classNames(plan.featured ? 'text-gray-700' : 'text-white', 'text-sm')}>
-                                USD / mo
-                              </p>
-                              <p className={classNames(plan.featured ? 'text-gray-500' : 'text-indigo-200', 'text-sm')}>
-                                Billed yearly (${plan.priceYearly})
-                              </p> */}
-                              </div>
-                            </div>
+  
                             <a
                               href="#"
                               className={classNames(
@@ -294,7 +157,7 @@ export default function Fiber() {
                             </a>
                           </div>
                         </div>
-                        <h4 className="sr-only">Features</h4>
+                        
                         <ul
                           role="list"
                           className={classNames(
@@ -329,148 +192,6 @@ export default function Fiber() {
                   </div>
                 </div>
               </div>
-
-              {/* Feature comparison */}
-              <section aria-labelledby="mobile-comparison-heading" className="lg:hidden">
-                {/* <h2 id="mobile-comparison-heading" className="sr-only">
-                  Feature comparison
-                </h2> */}
-
-                <div className="mx-auto mt-16 max-w-2xl space-y-16 px-4 sm:px-6">
-                  {plans.map((plan, planIndex) => (
-                    <div key={plan.title} className="border-t border-gray-200">
-                      <div
-                        className={classNames(
-                          plan.featured ? 'border-indigo-600' : 'border-transparent',
-                          '-mt-px pt-6 border-t-2 sm:w-1/2'
-                        )}
-                      >
-                        <h3
-                          className={classNames(plan.featured ? 'text-indigo-600' : 'text-gray-900', 'text-sm font-bold')}
-                        >
-                          {plan.title}
-                        </h3>
-                        <p className="mt-2 text-sm text-gray-500">{plan.description}</p>
-                      </div>
-                      <h4 className="mt-10 text-sm font-bold text-gray-900">Catered for business</h4>
-
-                      <div className="relative mt-6">
-                        {/* Fake card background */}
-                        <div aria-hidden="true" className="pointer-events-none absolute inset-0 hidden sm:block">
-                          <div
-                            className={classNames(
-                              plan.featured ? 'shadow-md' : 'shadow',
-                              'absolute right-0 w-1/2 h-full bg-white rounded-lg'
-                            )}
-                          />
-                        </div>
-
-                        <div
-                          className={classNames(
-                            plan.featured ? 'ring-2 ring-indigo-600 shadow-md' : 'ring-1 ring-black ring-opacity-5 shadow',
-                            'relative py-3 px-4 bg-white rounded-lg sm:p-0 sm:bg-transparent sm:rounded-none sm:ring-0 sm:shadow-none'
-                          )}
-                        >
-                          <dl className="divide-y divide-gray-200">
-                            {features.map((feature) => (
-                              <div
-                                key={feature.title}
-                                className="flex items-center justify-between py-3 sm:grid sm:grid-cols-2"
-                              >
-                                <dt className="pr-4 text-sm font-medium text-gray-600">{feature.title}</dt>
-                                <dd className="flex items-center justify-end sm:justify-center sm:px-4">
-                                  {typeof feature.tiers[planIndex].value === 'string' ? (
-                                    <span
-                                      className={classNames(
-                                        feature.tiers[planIndex].featured ? 'text-indigo-600' : 'text-gray-900',
-                                        'text-sm font-medium'
-                                      )}
-                                    >
-                                      {feature.tiers[planIndex].value}
-                                    </span>
-                                  ) : (
-                                    <>
-                                      {feature.tiers[planIndex].value === true ? (
-                                        <CheckIcon className="mx-auto h-5 w-5 text-indigo-600" aria-hidden="true" />
-                                      ) : (
-                                        <XMarkIcon className="mx-auto h-5 w-5 text-gray-400" aria-hidden="true" />
-                                      )}
-
-                                      <span className="sr-only">
-                                        {feature.tiers[planIndex].value === true ? 'Yes' : 'No'}
-                                      </span>
-                                    </>
-                                  )}
-                                </dd>
-                              </div>
-                            ))}
-                          </dl>
-                        </div>
-
-                        {/* Fake card border */}
-                        <div aria-hidden="true" className="pointer-events-none absolute inset-0 hidden sm:block">
-                          <div
-                            className={classNames(
-                              plan.featured ? 'ring-2 ring-indigo-600' : 'ring-1 ring-black ring-opacity-5',
-                              'absolute right-0 w-1/2 h-full rounded-lg'
-                            )}
-                          />
-                        </div>
-                      </div>
-
-                      <h4 className="mt-10 text-sm font-bold text-gray-900">Other perks</h4>
-
-                      <div className="relative mt-6">
-                        {/* Fake card background */}
-                        <div aria-hidden="true" className="pointer-events-none absolute inset-0 hidden sm:block">
-                          <div
-                            className={classNames(
-                              plan.featured ? 'shadow-md' : 'shadow',
-                              'absolute right-0 w-1/2 h-full bg-white rounded-lg'
-                            )}
-                          />
-                        </div>
-
-                        <div
-                          className={classNames(
-                            plan.featured ? 'ring-2 ring-indigo-600 shadow-md' : 'ring-1 ring-black ring-opacity-5 shadow',
-                            'relative py-3 px-4 bg-white rounded-lg sm:p-0 sm:bg-transparent sm:rounded-none sm:ring-0 sm:shadow-none'
-                          )}
-                        >
-                          <dl className="divide-y divide-gray-200">
-                            {perks.map((perk) => (
-                              <div key={perk.title} className="flex justify-between py-3 sm:grid sm:grid-cols-2">
-                                <dt className="text-sm font-medium text-gray-600 sm:pr-4">{perk.title}</dt>
-                                <dd className="text-center sm:px-4">
-                                  {perk.tiers[planIndex].value === true ? (
-                                    <CheckIcon className="mx-auto h-5 w-5 text-indigo-600" aria-hidden="true" />
-                                  ) : (
-                                    <XMarkIcon className="mx-auto h-5 w-5 text-gray-400" aria-hidden="true" />
-                                  )}
-
-                                  <span className="sr-only">{perk.tiers[planIndex].value === true ? 'Yes' : 'No'}</span>
-                                </dd>
-                              </div>
-                            ))}
-                          </dl>
-                        </div>
-
-                        {/* Fake card border */}
-                        <div aria-hidden="true" className="pointer-events-none absolute inset-0 hidden sm:block">
-                          <div
-                            className={classNames(
-                              plan.featured ? 'ring-2 ring-indigo-600' : 'ring-1 ring-black ring-opacity-5',
-                              'absolute right-0 w-1/2 h-full rounded-lg'
-                            )}
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-
-
             </div>
 
 
