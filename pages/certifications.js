@@ -115,12 +115,17 @@ export default function Certifications() {
                             completed the following safety training courses based on trade as offered by the Company(s):
                         </p>
                         <ul className="mt-8 text-xl leading-8 text-gray-500" role="list">
-                            <li>OSHA 30-HOUR CONSTRUCTION SAFETY</li>
+                            <li>OSHA 10 & 30-HOUR CONSTRUCTION SAFETY</li>
                             <li>FIRST AID / CPR / BLOODBORNE PATHOGENS</li>
                             <li>LADDER SAFETY</li>
                             <li>RF AWARENESS</li>
                             <li>CRANE, DERRICK & HOIST SAFETY</li>
                             <li>TRAFFIC CONTROL & FLAG PERSONNEL</li>
+                            <li>First Aid & CPR</li>
+                            <li>Blood Bortn Pathogens</li>
+                            <li>Fundamentals of RP Radiation</li>
+                            <li>HAZMAT</li>
+                            <li>Aerial Work Platform Operator</li>
                         </ul>
                         <p className="mt-8 text-xl leading-8 text-gray-500">
                             All personnel who perform controlled descent must also have satisfactorily completed the following safety training
