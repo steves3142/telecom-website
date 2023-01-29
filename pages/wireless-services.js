@@ -649,20 +649,6 @@ export default function Wireless() {
                             our affiliates may be copied or reproduced distributed in any way.
                         </p>
                     </div>
-                    <div className="prose prose-lg prose-indigo mx-auto mt-6 text-gray-500">
-                        <h2>Disclaimers</h2>
-                        <p>
-                            The use of this website is at your own risk. MSNT does not warrant that the aspects of this website will be
-                            uninterrupted or free of errors. The material in this website could include technical inaccuracies or other errors.
-                            The accessibility of this website may be interrupted due to technical circumstances. MSNT does not warrant that
-                            this website or the server that it makes accessible are free from viruses or other harmful components. MSNT or
-                            its subsidiaries or affiliated companies involved in creating, producing or delivering this website shall not be liable
-                            for any direct or indirect damages due to your (the “user”) use of or access to the website. MSNT may revise these
-                            terms and other information on this website at their discretion by updating or revising any information on this website,
-                            with the revisions taking effect as of the date of its posting on the website. MSNT reserves the right to change
-                            any information on this website at any time, without notice.
-                        </p>
-                    </div>
                 </div>
             </div>
 

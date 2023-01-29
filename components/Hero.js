@@ -1,6 +1,6 @@
 import HeroHeader from 'components/HeroHeader.js'
 import Image from "next/image"
-import LandingPageHeader from "../images/tower.jpg"
+import LandingPageHeader from "../images/NC_tower.jpeg"
 
 function Hero() {
     return (
