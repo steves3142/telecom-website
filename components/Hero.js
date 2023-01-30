@@ -1,5 +1,5 @@
 import HeroHeader from "./HeroHeader"
-import FirstPageHeader from "../images/fall_foilage_day.jpeg"
+import FirstPageHeader from "../images/fall.jpeg"
 import Image from "next/image"
 
 function Hero() {
