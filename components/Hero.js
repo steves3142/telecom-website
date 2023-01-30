@@ -1,14 +1,17 @@
-import HeroHeader from 'components/HeroHeader.js'
+import HeroHeader from "./HeroHeader"
+import FirstPageHeader from "../images/fall_foilage_day.jpeg"
 import Image from "next/image"
-import LandingPageHeader from "../images/NC_tower.jpeg"
 
 function Hero() {
     return (
         <div>
             <div className="relative">
-                <Image className="bg-hero-about" src={LandingPageHeader} />
+
+                <Image className="bg-hero-about" src={FirstPageHeader} />
+ 
                 <div className="absolute top-0 left-0 right-0">
                     <HeroHeader />
+
                     <main>
                         <div className="pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14">
 
