@@ -1,14 +1,32 @@
+import React, { useRef } from 'react';
+import { useScrollPosition } from '@n8tb1t/use-scroll-position'
+
 import HeroHeader from "./HeroHeader";
+import Header from "../components/Header";
 import WirelessHeader from "../images/farm_tower.jpeg";
 import Image from "next/image";
 
+
 function HeroWireless() {
+
+    useScrollPosition(
+        ({ prevPos, currPos }) => {
+            // const isShow = currPos.y > prevPos.y
+            // if (isShow !== hideOnScroll) setHideOnScroll(isShow)
+            console.log(currPos.x)
+            console.log(currPos.y)
+        }
+    )
+
     return (
         <div>
             <div className="relative">
                 <Image className="bg-hero-about" src={WirelessHeader} />
                 <div className="absolute top-0 left-0 right-0">
                     <HeroHeader />
+                    <div className="visible top-7:invisible sticky top-0">
+                        <Header />
+                    </div>
 
                     <main>
                         <div className="pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14">
@@ -20,7 +38,7 @@ function HeroWireless() {
                                                 <span className="block">Wireless</span>
                                                 <span className="block text-indigo-400">Services</span>
                                             </h1>
-                                            <a className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl" href="/contact-us">
+                                            <a className="mt-3 text-base text-white sm:mt-5 sm:text-xl lg:text-lg xl:text-xl" href="/contact-us">
                                                 <button className="inline-flex items-center align-top">
                                                     <div>CONTACT US</div>
                                                 </button>

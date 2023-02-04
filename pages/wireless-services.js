@@ -239,7 +239,7 @@ export default function Wireless() {
   return (
     <div>
       <header className="sticky top-0 z-10">
-        <Header />
+        {/* <Header /> */}
       </header>
       <HeroWireless />
 
@@ -380,7 +380,6 @@ export default function Wireless() {
                   </div>
                 </div>
               </div>
-              
             </div>
 
 
