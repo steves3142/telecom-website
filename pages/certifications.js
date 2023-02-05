@@ -1,15 +1,10 @@
 import React from "react";
-import HeroHeader from "../components/HeroHeader";
-import Header from "../components/Header";
 import Footer from "../components/Footer";
 import HeroCert from "../components/HeroCert";
 
 export default function Certifications() {
     return (
         <div>
-            <header className="sticky top-0 z-10">
-                <Header />
-            </header>
             <HeroCert />
 
             <div className="relative overflow-hidden bg-white py-16">

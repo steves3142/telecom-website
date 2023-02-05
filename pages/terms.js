@@ -1,15 +1,10 @@
 import React from "react";
-import HeroHeader from "../components/HeroHeader";
-import Header from "../components/Header";
 import HeroTerms from "../components/HeroTerms";
 import Footer from "../components/Footer";
 
 export default function Contact() {
     return (
         <div>
-            <header className="sticky top-0 z-10">
-                <Header />
-            </header>
             <HeroTerms />
 
             <div className="relative overflow-hidden bg-white py-16">

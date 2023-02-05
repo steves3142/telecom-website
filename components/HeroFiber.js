@@ -1,11 +1,42 @@
+import React, { useState, useMemo, useRef } from 'react';
+import { useScrollPosition } from '@n8tb1t/use-scroll-position'
+import Header from "../components/Header"
 import HeroHeader from "./HeroHeader";
 
 
 function HeroFiber() {
+
+    const [showOnScroll, setShowOnScroll] = useState(false)
+
+    useScrollPosition(
+        ({ prevPos, currPos }) => {
+            console.log(currPos.x)
+            console.log(currPos.y)
+            const revealPos = -61;
+            let isShow = currPos.y < revealPos;
+            if (isShow) setShowOnScroll(isShow)
+            else {
+                isShow = false;
+                setShowOnScroll(isShow)
+            }
+        },
+        [showOnScroll]
+    )
+
     return (
         <div className='bg-hero-fiber pb-96'>
             <main>
-            <HeroHeader />
+                <HeroHeader />
+                <div className="visible showOnScroll:invisible sticky top-0">
+                    {showOnScroll ?
+                        <Header /> :
+                        <div>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                        </div>}
+                </div>
+
                 <div className="pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14">
                     <div className="mx-40 max-w-6xl lg:px-8">
                         <div className="lg:grid lg:grid-cols-2 lg:gap-8">
@@ -16,7 +47,7 @@ function HeroFiber() {
                                         <span className="block text-indigo-400">Services</span>
                                     </h1>
                                     <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                                        
+
                                     </p>
                                 </div>
                             </div>

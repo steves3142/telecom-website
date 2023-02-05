@@ -17,10 +17,6 @@ const stats = [
 export default function About() {
     return (
         <div>
-            <header className="sticky top-0 z-10">
-                <Header />
-            </header>
-
             <HeroAbout />
 
             <div className="relative bg-white py-16 sm:py-24">

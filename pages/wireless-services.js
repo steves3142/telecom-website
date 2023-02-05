@@ -238,9 +238,6 @@ function classNames(...classes) {
 export default function Wireless() {
   return (
     <div>
-      <header className="sticky top-0 z-10">
-        {/* <Header /> */}
-      </header>
       <HeroWireless />
 
       <main>

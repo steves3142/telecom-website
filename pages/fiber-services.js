@@ -89,11 +89,10 @@ function classNames(...classes) {
 }
 
 export default function Fiber() {
+
+
   return (
     <div>
-      <header className="sticky top-0 z-10">
-        <Header />
-      </header>
       <HeroFiber />
 
       <main>

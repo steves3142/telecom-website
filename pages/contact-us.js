@@ -1,6 +1,4 @@
 import React from "react";
-import HeroHeader from "../components/HeroHeader";
-import Header from "../components/Header";
 import HeroContact from "../components/HeroContact";
 import Footer from "../components/Footer";
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
@@ -8,9 +6,6 @@ import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 export default function Contact() {
     return (
         <div>
-            <header className="sticky top-0 z-10">
-                <Header />
-            </header>
             <HeroContact />
 
             <div className="bg-gray-100">

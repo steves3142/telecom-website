@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useState, useMemo, useRef } from 'react';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 
 import HeroHeader from "./HeroHeader";
@@ -8,24 +8,38 @@ import Image from "next/image";
 
 
 function HeroWireless() {
+    
+    const [showOnScroll, setShowOnScroll] = useState(false)
 
     useScrollPosition(
         ({ prevPos, currPos }) => {
-            // const isShow = currPos.y > prevPos.y
-            // if (isShow !== hideOnScroll) setHideOnScroll(isShow)
             console.log(currPos.x)
             console.log(currPos.y)
-        }
+            const revealPos = -61;
+            let isShow = currPos.y < revealPos;
+            if ( isShow ) setShowOnScroll(isShow)
+            else { 
+                isShow = false; 
+                setShowOnScroll(isShow)
+            }
+        },
+        [showOnScroll]
     )
 
-    return (
+    return(
         <div>
             <div className="relative">
                 <Image className="bg-hero-about" src={WirelessHeader} />
                 <div className="absolute top-0 left-0 right-0">
                     <HeroHeader />
-                    <div className="visible top-7:invisible sticky top-0">
-                        <Header />
+                    <div className="visible showOnScroll:invisible sticky top-0">
+                        {showOnScroll ? 
+                        <Header /> : 
+                        <div>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                        </div>} 
                     </div>
 
                     <main>

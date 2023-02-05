@@ -13,10 +13,6 @@ const Home: NextPage = () => {
         <title>MSNT Telecom</title>
       </Head>
 
-      <header className="sticky top-0 z-10">
-        <Header />
-      </header>
-
       {/* Hero */}
       <Hero />
 
