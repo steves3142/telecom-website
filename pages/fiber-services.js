@@ -26,7 +26,7 @@ const plans = [
     ],
   },
   {
-    title: 'Markets Served',
+    title: 'MARKETS SERVED',
     featured: true,
     description: '',
     //   priceMonthly: 19,
