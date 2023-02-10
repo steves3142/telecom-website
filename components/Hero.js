@@ -8,22 +8,22 @@ import Image from "next/image"
 
 function Hero() {
 
-    const [showOnScroll, setShowOnScroll] = useState(false)
+    // const [showOnScroll, setShowOnScroll] = useState(false)
 
-    useScrollPosition(
-        ({ prevPos, currPos }) => {
-            console.log(currPos.x)
-            console.log(currPos.y)
-            const revealPos = -61;
-            let isShow = currPos.y < revealPos;
-            if (isShow) setShowOnScroll(isShow)
-            else {
-                isShow = false;
-                setShowOnScroll(isShow)
-            }
-        },
-        [showOnScroll]
-    )
+    // useScrollPosition(
+    //     ({ prevPos, currPos }) => {
+    //         console.log(currPos.x)
+    //         console.log(currPos.y)
+    //         const revealPos = -61;
+    //         let isShow = currPos.y < revealPos;
+    //         if (isShow) setShowOnScroll(isShow)
+    //         else {
+    //             isShow = false;
+    //             setShowOnScroll(isShow)
+    //         }
+    //     },
+    //     [showOnScroll]
+    // )
 
 
     return (
@@ -34,7 +34,7 @@ function Hero() {
 
                 <div className="absolute top-0 left-0 right-0">
                     <HeroHeader />
-                    <div className="sticky top-0">
+                    {/* <div className="sticky top-0">
                         {showOnScroll ?
                             <Header /> :
                             <div>
@@ -42,7 +42,7 @@ function Hero() {
                                 <br></br>
                                 <br></br>
                             </div>}
-                    </div>
+                    </div> */}
 
                     <main>
                         <div className="pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14">

@@ -14,7 +14,7 @@ const navigation = [
 ]
 const plans = [
   {
-    title: 'KEY SERVICES',
+    title: 'MARKETS SERVED ',
     featured: true,
     description: '',
     //   priceMonthly: 5,
@@ -26,7 +26,7 @@ const plans = [
     ],
   },
   {
-    title: 'MARKETS SERVED',
+    title: 'KEY SERVICES',
     featured: true,
     description: '',
     //   priceMonthly: 19,
@@ -98,6 +98,9 @@ export default function Fiber() {
       <main>
         <div>
           <div>
+            <div className="sticky top-0 z-10">
+              <Header />
+            </div>
             {/* Pricing section */}
             <div>
               <div className="bg-indigo-600">
@@ -141,7 +144,7 @@ export default function Fiber() {
                             {plan.title}
                           </h3>
                           <div className="flex flex-col items-start sm:flex-row sm:items-center sm:justify-between lg:flex-col lg:items-start">
-  
+
                             <a
                               href="#"
                               className={classNames(
@@ -156,7 +159,7 @@ export default function Fiber() {
                             </a>
                           </div>
                         </div>
-                        
+
                         <ul
                           role="list"
                           className={classNames(

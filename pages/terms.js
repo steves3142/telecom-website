@@ -1,13 +1,19 @@
 import React from "react";
 import HeroTerms from "../components/HeroTerms";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 export default function Contact() {
     return (
         <div>
             <HeroTerms />
 
+            <div className="sticky top-0 z-10">
+                <Header />
+            </div>
+            
             <div className="relative overflow-hidden bg-white py-16">
+
                 <div className="hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full lg:[overflow-anchor:none]">
                     <div className="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
                         <svg
@@ -75,6 +81,7 @@ export default function Contact() {
                         </svg>
                     </div>
                 </div>
+
                 <div className="relative px-6 lg:px-8">
                     <div className="mx-auto max-w-prose text-lg">
                         <h1>

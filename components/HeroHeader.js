@@ -29,7 +29,7 @@ function HeroHeader() {
                                     />
                                  </Link>
                                 <div className="-mr-2 flex items-center md:hidden">
-                                    <Popover.Button className="focus-ring-inset inline-flex items-center justify-center rounded-md bg-gray-900 p-2 text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-white">
+                                    <Popover.Button className="focus-ring-inset inline-flex items-center justify-center rounded-md bg-gray-900 p-2 text-gray-400 hover:bg-[#5a5a5a1a] focus:outline-none focus:ring-2 focus:ring-white">
                                         <span className="sr-only">Open main menu</span>
                                         <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                                     </Popover.Button>
@@ -37,7 +37,7 @@ function HeroHeader() {
                             </div>
                             <div className="hidden space-x-8 md:ml-10 md:flex">
                                 {navigation.map((item) => (
-                                    <a key={item.name} href={item.href} className="text-base font-medium text-white hover:text-gray-300">
+                                    <a key={item.name} href={item.href} className="rounded-md text-base font-medium text-white hover:bg-[#5a5a5a1a] ">
                                         {item.name}
                                     </a>
                                 ))}
