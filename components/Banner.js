@@ -36,10 +36,10 @@ function Banner() {
             <div className="flex flex-col">
               <div className="absolute left-20">
                 <h1 className="text-xl font-bold tracking-tight text-white sm:text-6xl lg:mt-6 xl:text-5xl">
-                  <span className="block text-indigo-400">Connecting people, places and events around the globe.</span>
+                  <span className="block text-indigo-400">Connecting people, places and events in the Tri-State.</span>
                 </h1>
                 <p className="mt-3 text-base text-gray-400 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                  With thousands of towers throught the Americas, Africa and the Phillipines, MSNT offers seamless integration into our communities.
+                  MSNT offers seamless integration for all communities in the New Jersey and New York tri-state area.
                 </p>
               </div>
             </div>
@@ -56,7 +56,7 @@ function Banner() {
                   <span className="block text-indigo-400">Providing continuous improvements to our network infrastructure.</span>
                 </h1>
                 <p className="mt-3 text-base text-gray-400 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                MSNT assists wireless service providers in developing their own networks through site acquisition, zoning, construction and equipment installation. We are always focusing on our primary goal. To build better wireless TM.
+                MSNT assists wireless service providers in developing their own networks through site acquisition, zoning, construction and equipment installation. We are always focusing on our primary goal.
                 </p>
               </div>
             </div>

@@ -23,9 +23,11 @@ function HeroFiber() {
                                             <span className="block">Fiber</span>
                                             <span className="block text-indigo-400">Services</span>
                                         </h1>
-                                        <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-
-                                        </p>
+                                        <a className="mt-3 text-base text-white sm:mt-5 sm:text-xl lg:text-lg xl:text-xl" href="/contact-us">
+                                                <button className="inline-flex items-center align-top">
+                                                    <div>CONTACT US</div>
+                                                </button>
+                                            </a>
                                     </div>
                                 </div>
                                 <div className="mt-12 -mb-16 sm:-mb-48 lg:relative lg:m-0">
