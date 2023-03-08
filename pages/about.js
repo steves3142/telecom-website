@@ -17,24 +17,6 @@ const stats = [
 
 export default function About() {
 
-    // const [showOnScroll, setShowOnScroll] = useState(false)
-
-    // useScrollPosition(
-    //     ({ prevPos, currPos }) => {
-    //         console.log(currPos.x)
-    //         console.log(currPos.y)
-    //         const revealPos = -61;
-    //         let isShow = currPos.y < revealPos;
-    //         if (isShow) setShowOnScroll(isShow)
-    //         else {
-    //             isShow = false;
-    //             setShowOnScroll(isShow)
-    //         }
-    //     },
-    //     [showOnScroll]
-    // )
-
-
     return (
         <div>
             <div className="relative">
@@ -42,36 +24,36 @@ export default function About() {
                 <div className="absolute top-0 left-0 right-0">
                     <HeroHeader />
 
-                    
-                    <main>
-                    <div className="pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14">
-                        <div className="mx-40 max-w-6xl lg:px-8">
-                            <div className="lg:grid lg:grid-cols-2 lg:gap-8">
-                                <div className="">
-                                    <div className="lg:py-24">
-                                        <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:mt-6 xl:text-6xl">
-                                            <span className="block">About</span>
-                                            <span className="block text-indigo-400">Us</span>
-                                        </h1>
-                                        <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
 
-                                        </p>
+                    <main>
+                        <div className="pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14">
+                            <div className="mx-40 max-w-6xl lg:px-8">
+                                <div className="lg:grid lg:grid-cols-2 lg:gap-8">
+                                    <div className="">
+                                        <div className="lg:py-24">
+                                            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:mt-6 xl:text-6xl">
+                                                <span className="block">About</span>
+                                                <span className="block text-indigo-400">Us</span>
+                                            </h1>
+                                            <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="mt-12 -mb-16 sm:-mb-48 lg:relative lg:m-0">
-                                    <div className="mx-auto max-w-md px-6 sm:max-w-2xl lg:max-w-none lg:px-0">
-                                        {/* Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ */}
-                                        <img
-                                            className="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                                            src=""
-                                            alt=""
-                                        />
+                                    <div className="mt-12 -mb-16 sm:-mb-48 lg:relative lg:m-0">
+                                        <div className="mx-auto max-w-md px-6 sm:max-w-2xl lg:max-w-none lg:px-0">
+                                            {/* Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ */}
+                                            <img
+                                                className="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                                                src=""
+                                                alt=""
+                                            />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </main>
+                    </main>
                 </div>
 
                 <div className="sticky top-0 z-10">
@@ -133,7 +115,7 @@ export default function About() {
                                             </div>
 
                                             <footer className="mt-4">
-                                                <p className="text-base font-semibold text-indigo-200">Sarah Williams, CEO at Workcation</p>
+                                                <p className="text-base font-semibold text-indigo-200">Miguel Susanibar, CEO at MSNT</p>
                                             </footer>
                                         </blockquote>
                                     </div>
@@ -149,13 +131,13 @@ export default function About() {
                                 </h2>
                                 <div className="mt-6 space-y-6 text-gray-500">
                                     <p className="text-lg">
-                                        SBA Communications Corporation (SBA) is a leading independent owner and operator of wireless communications infrastructure including towers, buildings, rooftops, distributed antenna systems (DAS) and small cells. Founded in 1989 and headquartered in Boca Raton, Florida, SBA has operations and offices in sixteen markets throughout the Americas, Africa and the Philippines. We are listed on NASDAQ under the symbol SBAC and our organization is part of the S&P 500. SBA is also one of the top Real Estate Investment Trusts (REITs) based on market capitalization.
+                                        MSNT is a leading independent owner and operator of wireless communications infrastructure including towers, buildings, rooftops, distributed antenna systems (DAS) and small cells.
                                     </p>
-                                    <h3>What we do</h3>
+                                    <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-3xl">What we do</h3>
                                     <p className="text-base leading-7">
-                                        By “Building Better Wireless®“, SBA generates revenue from two primary businesses:
+                                        By “SLOGAN HERE®“, MSNT generates revenue from two primary businesses - site leasing and site development services.
                                     </p>
-                                    <h3>Site development</h3>
+                                    <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-3xl">Site Development</h3>
                                     <p className="text-base leading-7">
                                         We can assist wireless service providers and operators in developing their own networks through site acquisition, zoning, construction and equipment installation.
                                     </p>
@@ -181,11 +163,14 @@ export default function About() {
                             </div>
                         </div>
                     </div>
+
+
                 </div>
+
                 <div className="">
-                    <Image src={AboutUsImage}
-                    />
-                </div>
+                        <Image className="" src={AboutUsImage}
+                        />
+                    </div>
             </div>
             <Footer />
         </div>

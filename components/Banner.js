@@ -22,7 +22,7 @@ function Banner() {
                   <span className="block text-indigo-400">Essential Infrastructure</span>
                 </h1>
                 <p className="mt-3 text-base text-gray-400 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                  In our business, it is all about the signal. Our clients depend on SBA to provide the wireless infrastructure that allows them to transmit the signal to their customers. Your organization can find solutions to network coverage and capacity needs with our full spectrum of services.
+                  In our business, it is all about the signal. Our clients depend on MSNT to provide the wireless infrastructure that allows them to transmit the signal to their customers. Your organization can find solutions to network coverage and capacity needs with our full spectrum of services.
                 </p>
               </div>
             </div>
@@ -56,7 +56,7 @@ function Banner() {
                   <span className="block text-indigo-400">Providing continuous improvements to our network infrastructure.</span>
                 </h1>
                 <p className="mt-3 text-base text-gray-400 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                SBA assists wireless service providers in developing their own networks through site acquisition, zoning, construction and equipment installation. We are always focusing on our primary goal. To build better wireless TM.
+                MSNT assists wireless service providers in developing their own networks through site acquisition, zoning, construction and equipment installation. We are always focusing on our primary goal. To build better wireless TM.
                 </p>
               </div>
             </div>

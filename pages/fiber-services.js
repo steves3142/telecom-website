@@ -20,9 +20,11 @@ const plans = [
     //   priceMonthly: 5,
     //   priceYearly: 56,
     mainFeatures: [
-      { id: 1, value: 'Southern California' },
+      { id: 1, value: 'Florida' },
       { id: 2, value: 'New Jersey / New York metropolitan area' },
-      { id: 3, value: 'North Carolina' }
+      { id: 3, value: 'New York' },
+      { id: 4, value: 'Connecticut' },
+      { id: 5, value: 'Pennsylvania' }
     ],
   },
   {
