@@ -8,22 +8,27 @@ import React from 'react';
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-gray-100">
+    <div>
       <Head>
         <title>MSNT Telecom</title>
       </Head>
+      
+      <div className="bg-gray-100">
+        {/* Hero */}
+        <Hero />
+        <main>
+          {/* Banner */}
+          <section >
+            <Banner />
+          </section>
+        </main>
 
-      {/* Hero */}
-      <Hero />
+        {/* Footer */}
+        <section className="relative bottom-0 left-0 right-0">
+          <Footer />
+        </section>
 
-      {/* Banner */}
-      <main className="w-500 h-500">
-      <Banner />
-      </main>
-
-      {/* Footer */}
-      <Footer />
-
+      </div>
     </div>
   )
 };
