@@ -2,7 +2,9 @@ import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'; 
-import { ChevronRightIcon } from '@heroicons/react/20/solid'
+import Image from 'next/image'; 
+import MSNT from '../images/MSNT_Logo.png'
+
 
 
 const navigation = [
@@ -22,10 +24,14 @@ function HeroHeader() {
                             <div className="flex w-full items-center justify-between md:w-auto">
                                 <Link href="/">
                                     {/* <span className="sr-only">Your Company</span> */}
-                                    <img
+                                    {/* <img
                                         className="h-8 w-auto sm:h-10"
                                         src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                                         alt=""
+                                    /> */}
+                                    <Image 
+                                    className="h-36 w-auto"
+                                    src={MSNT}
                                     />
                                  </Link>
                                 <div className="-mr-2 flex items-center md:hidden">

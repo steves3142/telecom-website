@@ -1,5 +1,9 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Image from "next/image"
+import ThreeAntennas from "../images/three_antennas.jpg"
+import AntennaArray from "../images/antenna_array.jpg"
+import Crane from "../images/crane.jpg"
 
 function Banner() {
   return (
@@ -13,8 +17,8 @@ function Banner() {
         showThumbs={false}
         interval={5000}
       >
-        <div className="w-500 h-500 overflow-hidden">
-          <img loading="lazy" src="https://s22.q4cdn.com/819087555/files/design/slider/essential2-(1).jpg" />
+        <div className="w-100 h-100 overflow-hidden">
+          <Image className="bg-hero-about" src={ThreeAntennas}/>
           <div className="absolute top-28">
             <div className="flex flex-col">
               <div className="absolute left-60">
@@ -30,8 +34,7 @@ function Banner() {
         </div>
 
         <div className="absolute top-0 right-0 w-6/12 h-6/12">
-          <img loading="lazy" src="https://s22.q4cdn.com/819087555/files/design/slider/slider_3_img.jpg"
-            alt="" />
+          <Image className="bg-hero-about" src={AntennaArray}/>
           <div className="absolute top-28">
             <div className="flex flex-col">
               <div className="absolute left-20">
@@ -47,8 +50,7 @@ function Banner() {
         </div>
 
         <div className="absolute top-0 right-0 w-7/12 h-8/12">
-          <img loading="lazy" src="https://s22.q4cdn.com/819087555/files/design/slider/slider_2_img.jpg"
-            alt="" />
+          <Image className="bg-hero-about" src={Crane}/>
           <div className="absolute top-28">
             <div className="flex flex-col">
               <div className="absolute -left-60 ">
