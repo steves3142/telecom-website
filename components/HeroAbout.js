@@ -18,8 +18,8 @@ function HeroAbout() {
                                 <div className="">
                                     <div className="lg:py-24">
                                         <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:mt-6 xl:text-6xl">
-                                            <span className="block">About</span>
-                                            <span className="block text-indigo-400">Us</span>
+                                            <span className="block text-blue-800">About</span>
+                                            <span className="block text-blue-800">Us</span>
                                         </h1>
                                         <a className="mt-3 text-base text-white sm:mt-5 sm:text-xl lg:text-lg xl:text-xl" href="/contact-us">
                                                 <button className="inline-flex items-center align-top">
