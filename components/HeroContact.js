@@ -1,5 +1,4 @@
 import React, { useState, useMemo, useRef } from "react";
-import Header from "../components/Header"
 import HeroHeader from "./HeroHeader";
 import Image from "next/image";
 import ContactHeader from "../images/towerLineUp.jpeg"

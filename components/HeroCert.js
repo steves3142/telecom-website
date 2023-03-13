@@ -1,8 +1,7 @@
 import React, { useState, useMemo, useRef } from 'react';
-import Header from "../components/Header"
 import HeroHeader from "./HeroHeader"
 import Image from "next/image"
-import CertHeader from "../images/tower.jpg"
+import CertHeader from "../images/ncmarble_tower.png"
 
 function HeroCert() {
 
