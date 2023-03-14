@@ -22,7 +22,7 @@ function HeroTerms() {
                                         <div className="lg:py-24">
                                             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:mt-6 xl:text-6xl">
                                                 <span className="block text-indigo-100">Terms</span>
-                                                <span className="block text-indigo-400">& Conditions</span>
+                                                <span className="block text-blue-800">& Conditions</span>
                                             </h1>
                                             <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
 

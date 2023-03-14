@@ -248,7 +248,7 @@ export default function Wireless() {
             </div>
             {/* Pricing section */}
             <div>
-              <div className="bg-indigo-600">
+              <div className="bg-blue-800">
                 {/* Overlapping background */}
 
                 <div className="mx-auto max-w-2xl px-4 pt-16 text-center sm:px-6 sm:pt-32 lg:max-w-7xl lg:px-8">
@@ -256,37 +256,19 @@ export default function Wireless() {
                     <span className="block lg:inline">MSNT </span>
                     <span className="block lg:inline">Services</span>
                   </h1>
-                  <p className="mt-4 text-xl text-indigo-100">
+                  <p className="mt-4 text-xl text-blue-100">
                     Everything you need, nothing you don't. Find the services that best suits your business.
                   </p>
                 </div>
 
                 <h2 className="sr-only">Plans</h2>
 
-                {/* Toggle */}
-                {/* <div className="mt-12 flex justify-center sm:mt-16">
-                <div className="flex rounded-lg bg-indigo-700 p-0.5">
-                  <button
-                    type="button"
-                    className="whitespace-nowrap rounded-md border-indigo-700 bg-white py-2 px-6 text-sm font-medium text-indigo-700 shadow-sm hover:bg-indigo-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-700"
-                  >
-                    Monthly billing
-                  </button>
-                  <button
-                    type="button"
-                    className="ml-0.5 whitespace-nowrap rounded-md border border-transparent py-2 px-6 text-sm font-medium text-indigo-200 hover:bg-indigo-800 focus:z-10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-700"
-                  >
-                    Yearly billing
-                  </button>
-                </div>
-              </div> */}
-
                 {/* Cards */}
                 <div className="relative mx-auto mt-8 max-w-2xl px-4 pb-8 sm:mt-12 sm:px-6 lg:max-w-7xl lg:px-8 lg:pb-0">
                   {/* Decorative background */}
                   <div
                     aria-hidden="true"
-                    className="absolute inset-0 top-4 bottom-6 left-8 right-8 hidden rounded-tl-lg rounded-tr-lg bg-indigo-700 lg:block"
+                    className="absolute inset-0 top-4 bottom-6 left-8 right-8 hidden rounded-tl-lg rounded-tr-lg bg-blue-900 lg:block"
                   />
 
                   <div className="relative space-y-6 lg:grid lg:grid-cols-3 lg:space-y-0">
@@ -294,14 +276,14 @@ export default function Wireless() {
                       <div
                         key={plan.title}
                         className={classNames(
-                          plan.featured ? 'bg-white ring-2 ring-indigo-700 shadow-md' : 'bg-indigo-700 lg:bg-transparent',
+                          plan.featured ? 'bg-white ring-2 ring-blue-800 shadow-md' : 'bg-blue-800 lg:bg-transparent',
                           'pt-6 px-6 pb-3 rounded-lg lg:px-8 lg:pt-12'
                         )}
                       >
                         <div>
                           <h3
                             className={classNames(
-                              plan.featured ? 'text-indigo-600' : 'text-white',
+                              plan.featured ? 'text-blue-700' : 'text-white',
                               'text-base font-semibold'
                             )}
                           >
@@ -311,7 +293,7 @@ export default function Wireless() {
                             <div className="mt-3 flex items-center">
                               <p
                                 className={classNames(
-                                  plan.featured ? 'text-indigo-600' : 'text-white',
+                                  plan.featured ? 'text-blue-700' : 'text-white',
                                   'text-4xl font-bold tracking-tight'
                                 )}
                               >
@@ -335,8 +317,8 @@ export default function Wireless() {
                               href="#"
                               className={classNames(
                                 plan.featured
-                                  ? 'bg-indigo-600 text-white hover:bg-indigo-700'
-                                  : 'bg-white text-indigo-600 hover:bg-indigo-50',
+                                  ? 'bg-blue-700 text-white hover:bg-blue-800'
+                                  : 'bg-white text-blue-700 hover:bg-blue-50',
                                 'mt-6 w-full inline-block py-2 px-8 border border-transparent rounded-md shadow-sm text-center text-sm font-medium sm:mt-0 sm:w-auto lg:mt-6 lg:w-full'
                               )}
                             >
@@ -351,7 +333,7 @@ export default function Wireless() {
                           className={classNames(
                             plan.featured
                               ? 'border-gray-200 divide-gray-200'
-                              : 'border-indigo-500 divide-indigo-500 divide-opacity-75',
+                              : 'border-blue-600 divide-blue-600 divide-opacity-75',
                             'mt-7 border-t divide-y lg:border-t-0'
                           )}
                         >
@@ -359,7 +341,7 @@ export default function Wireless() {
                             <li key={mainFeature.id} className="flex items-center py-3">
                               <CheckIcon
                                 className={classNames(
-                                  plan.featured ? 'text-indigo-500' : 'text-indigo-200',
+                                  plan.featured ? 'text-blue-600' : 'text-blue-300',
                                   'w-5 h-5 flex-shrink-0'
                                 )}
                                 aria-hidden="true"
