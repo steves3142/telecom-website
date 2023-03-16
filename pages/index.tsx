@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import type { NextPage } from 'next';
-import Header from '../components/Header'
+import Image from 'next/image';
+import Map from '../images/map.png'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import Banner from '../components/Banner.js'
@@ -18,8 +19,14 @@ const Home: NextPage = () => {
 
       {/* Banner */}
       <main className="w-500 h-500">
-      <Banner />
+        <Banner />
       </main>
+
+      {/* Map */}
+      <div className="relative">
+        <Image className="" alt="" src={Map} />
+      </div>
+
 
       {/* Footer */}
       <Footer />
