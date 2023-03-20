@@ -1,6 +1,29 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
+import { Fragment } from 'react'
+import { Popover, Transition } from '@headlessui/react'
+import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import {
+  ArrowPathIcon,
+  ChartPieIcon,
+  CursorArrowRaysIcon,
+  FingerPrintIcon,
+  SquaresPlusIcon,
+} from '@heroicons/react/24/outline'
+
+const solutions = [
+  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
+  { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
+  { name: 'Security', description: "Your customers' data will be safe and secure", href: '#', icon: FingerPrintIcon },
+  { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
+  { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+]
+const callsToAction = [
+  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
+  { name: 'Contact sales', href: '#', icon: PhoneIcon },
+]
+
 export default function test() {
     return (
       <div className="relative bg-white">
@@ -13,9 +36,9 @@ export default function test() {
           />
         </div>
 
-        <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:pt-32">
-          <div className="px-6 lg:px-8">
-            <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
+        <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-24 lg:pt-32">
+          <div className="relative rounded-3xl shadow-2xl px-6 lg:px-8">
+            <div className="p-4 mx-auto max-w-xl lg:mx-0 lg:max-w-lg right-3/4">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900">Let's work together</h2>
               <p className="mt-2 text-lg leading-8 text-gray-600">
               MSNT is licensed and provides a full portfolio of services in more than 10 states nationwide. For more information about where we are currently licensed, please utilize the form below to reach out to our licensing department.
@@ -178,6 +201,60 @@ export default function test() {
             </div>
           </div>
         </div>
+
+
+
+    <Popover className="relative">
+      <Popover.Button className="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+        <span>Solutions</span>
+        <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
+      </Popover.Button>
+
+      <Transition
+        as={Fragment}
+        enter="transition ease-out duration-200"
+        enterFrom="opacity-0 translate-y-1"
+        enterTo="opacity-100 translate-y-0"
+        leave="transition ease-in duration-150"
+        leaveFrom="opacity-100 translate-y-0"
+        leaveTo="opacity-0 translate-y-1"
+      >
+        <Popover.Panel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4">
+          <div className="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
+            <div className="p-4">
+              {solutions.map((item) => (
+                <div key={item.name} className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                  <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
+                  </div>
+                  <div>
+                    <a href={item.href} className="font-semibold text-gray-900">
+                      {item.name}
+                      <span className="absolute inset-0" />
+                    </a>
+                    <p className="mt-1 text-gray-600">{item.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+              {callsToAction.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="flex items-center justify-center gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100"
+                >
+                  <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
+                  {item.name}
+                </a>
+              ))}
+            </div>
+          </div>
+        </Popover.Panel>
+      </Transition>
+    </Popover>
+
+
       </div>
     )
   }

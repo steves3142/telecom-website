@@ -13,9 +13,9 @@ function Contact() {
                 />
             </div>
 
-            <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:pt-32">
-                <div className="px-6 lg:px-8">
-                    <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
+            <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-24 lg:pt-32">
+                <div className="rounded-3xl shadow-2xl px-6 lg:px-8">
+                    <div className="p-4 first-letter:mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
                         <h2 className="text-3xl font-bold tracking-tight text-gray-900">Let's work together</h2>
                         <p className="mt-2 text-lg leading-8 text-gray-600">
                             MSNT is licensed and provides a full portfolio of services in more than 10 states nationwide. For more information about where we are currently licensed, please utilize the form below to reach out to our licensing department.
