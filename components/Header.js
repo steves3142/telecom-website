@@ -53,10 +53,10 @@ export default function Header() {
                     Wireless Services
                   </Link>
                   <Link
-                    href="fiber-services"
+                    href="certifications"
                     className="inline-flex items-center border-b-2 hover:border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900"
                   >
-                    Fiber Services
+                    Certifications
                   </Link>
                   <Link
                     href="contact-us"
@@ -88,10 +88,10 @@ export default function Header() {
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
-                href="fiber-services"
+                href="certifications"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
               >
-                Fiber Services
+                Certifications
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
