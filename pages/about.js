@@ -99,11 +99,7 @@ export default function About() {
                                 </p>
                                 <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-3xl">What we do</h3>
                                 <p className="text-base leading-7">
-                                    By “SLOGAN HERE®“, MSNT generates revenue from two primary businesses - site leasing and site development services.
-                                </p>
-                                <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-3xl">Site Development</h3>
-                                <p className="text-base leading-7">
-                                    We can assist wireless service providers and operators in developing their own networks through site acquisition, zoning, construction and equipment installation.
+                                    By “SLOGAN HERE®“, MSNT generates revenue from two primary businesses....
                                 </p>
                             </div>
                         </div>

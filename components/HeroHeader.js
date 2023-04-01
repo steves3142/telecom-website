@@ -10,7 +10,7 @@ import MSNT from '../images/MSNT_Logo.png'
 const navigation = [
     { name: 'About', href: `${process.env.NEXT_PUBLIC_BASE_URL}/about`, current: false },
     { name: 'Wireless Services',  href: `${process.env.NEXT_PUBLIC_BASE_URL}/wireless-services`, current: false },
-    { name: 'Fiber Services', href: `${process.env.NEXT_PUBLIC_BASE_URL}/fiber-services`, current: false },
+    { name: 'Certifications', href: `${process.env.NEXT_PUBLIC_BASE_URL}/certifications`, current: false },
     { name: 'Contact', href: `${process.env.NEXT_PUBLIC_BASE_URL}/contact-us`, current: false },
 ]
 
