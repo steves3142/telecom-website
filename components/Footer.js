@@ -9,14 +9,13 @@ const navigation = {
     { name: 'Contact', href: '/contact-us' },
   ],
   fiber: [
-    { name: 'Solutions', href: '/fiber-services' },
-    { name: 'Services', href: '/fiber-services' },
+    { name: 'Solutions', href: '/wireless-services' },
+    { name: 'Services', href: '/wireless-services' },
     { name: 'Case Studies', href: '#' },
   ],
   wireless: [
     { name: 'Solutions', href: '/wireless-services' },
     { name: 'Services', href: '/wireless-services' },
-    { name: 'Blog', href: '#' },
   ],
   terms: [
     { name: 'Overview', href: '/terms' },
