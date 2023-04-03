@@ -13,7 +13,8 @@ type Props = {
   projects: Project[];
 }
 
-const Home = ({projects}: Props) => {
+
+const Home: NextPage<{ projects: Project[] }> = ( props ) => {
   return (
     <div className="bg-white">
       <Head>
@@ -30,7 +31,7 @@ const Home = ({projects}: Props) => {
 
       {/* Banner */}
       <main className="w-500 h-500">
-        <Banner projects={projects}/>
+        <Banner projects={props.projects}/>
       </main>
 
       {/* Footer */}
