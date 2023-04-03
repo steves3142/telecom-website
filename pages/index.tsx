@@ -2,11 +2,18 @@ import Head from 'next/head'
 import type { NextPage } from 'next';
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
-import Banner from '../components/Banner.js'
+import Banner from '../components/Banner'
 import React from 'react';
 import Contact from '../components/Contact'
+import type { GetStaticProps } from 'next';
+import { Project } from "../typings"
+import { fetchProjects } from '../utils/fetchProjects';
 
-const Home: NextPage = () => {
+type Props = {
+  projects: Project[];
+}
+
+const Home = ({projects}: Props) => {
   return (
     <div className="bg-white">
       <Head>
@@ -23,7 +30,7 @@ const Home: NextPage = () => {
 
       {/* Banner */}
       <main className="w-500 h-500">
-        <Banner />
+        <Banner projects={projects}/>
       </main>
 
       {/* Footer */}
@@ -34,3 +41,18 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  const projects: Project[] = await fetchProjects(); 
+
+  return {
+    props: {
+      projects
+    },
+    // Next.js will attempt to re-generate the page:
+    //- When a request comes in 
+    //- At most once every 10 seconds
+    revalidate: 10,
+  };
+};

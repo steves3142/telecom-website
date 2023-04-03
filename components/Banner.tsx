@@ -4,8 +4,14 @@ import Image from "next/image"
 import ThreeAntennas from "../images/three_antennas.jpg"
 import AntennaArray from "../images/antenna_array.jpg"
 import Crane from "../images/crane.jpg"
+import { Project } from "../typings";
+import { urlFor } from '../sanity';
 
-function Banner() {
+type Props = {
+  projects: Project[]
+};
+
+function Banner({ projects }: Props) {
   return (
     <div className="relative">
       <div className="bg-white" />
@@ -17,20 +23,32 @@ function Banner() {
         showThumbs={false}
         interval={5000}
       >
-        <div>
+        {/* <div>
           <img loading="lazy" src="https://links.papareact.com/gi1" />
         </div>
 
         <div>
-        <img loading="lazy" src="https://links.papareact.com/6ff"
-          alt="" />
+          <img loading="lazy" src="https://links.papareact.com/6ff"
+            alt="" />
         </div>
 
         <div>
-        <img loading="lazy" src="https://links.papareact.com/7ma"
-          alt="" />
-        </div>
+          <img loading="lazy" src="https://links.papareact.com/7ma"
+            alt="" />
+        </div> */}
 
+        {/* Banner Projects */}
+
+        {projects.map((project) => (
+            <div>
+            <img 
+            key={project._id}
+            loading="lazy" 
+            src={urlFor(project.image).url()}
+            alt="" />
+            </div>
+        ))}
+    
       </Carousel>
     </div>
   );
