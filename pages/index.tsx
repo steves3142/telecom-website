@@ -5,6 +5,7 @@ import Hero from '../components/Hero'
 import Banner from '../components/Banner'
 import React from 'react';
 import Contact from '../components/Contact'
+import Header from '../components/Header'
 import type { GetStaticProps } from 'next';
 import { Project } from "../typings"
 import { fetchProjects } from '../utils/fetchProjects';
@@ -14,7 +15,7 @@ type Props = {
 }
 
 
-const Home: NextPage<{ projects: Project[] }> = ( props ) => {
+const Home = ({ projects }: Props) => {
   return (
     <div className="bg-white">
       <Head>
@@ -24,6 +25,12 @@ const Home: NextPage<{ projects: Project[] }> = ( props ) => {
       {/* Hero */}
       <Hero />
 
+      {/* Nav Bar */}
+
+      <div className="sticky top-0 z-10">
+        <Header />
+      </div>
+
       {/* Map */}
       <div className="relative">
         <Contact />
@@ -31,7 +38,7 @@ const Home: NextPage<{ projects: Project[] }> = ( props ) => {
 
       {/* Banner */}
       <main className="w-500 h-500">
-        <Banner projects={props.projects}/>
+        <Banner projects={projects} />
       </main>
 
       {/* Footer */}
@@ -45,7 +52,7 @@ export default Home;
 
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-  const projects: Project[] = await fetchProjects(); 
+  const projects: Project[] = await fetchProjects();
 
   return {
     props: {
