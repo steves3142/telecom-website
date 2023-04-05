@@ -39,7 +39,7 @@ function Banner({ projects }: Props) {
 
         {/* Banner Projects */}
 
-        {projects.map((project) => (
+        {/* {projects.map((project) => (
             <div>
             <img 
             key={project._id}
@@ -48,7 +48,7 @@ function Banner({ projects }: Props) {
             alt="" />
             </div>
         ))}
-    
+     */}
       </Carousel>
     </div>
   );
