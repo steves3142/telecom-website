@@ -39,16 +39,15 @@ function Banner({ projects }: Props) {
 
         {/* Banner Projects */}
 
-        {/* {projects.map((project) => (
-            <div>
+        {projects.map((project) => (
+            <div key={project._id}>
             <img 
-            key={project._id}
             loading="lazy" 
             src={urlFor(project.image).url()}
             alt="" />
             </div>
         ))}
-     */}
+    
       </Carousel>
     </div>
   );

@@ -21,3 +21,15 @@ export interface Project extends SanityBody {
     summary: string;
     technologies: Technology[];
 }
+
+export interface PageInfo extends SanityBody {
+    _type: "pageInfo";
+    asset: string;
+    backgroundInformation: string;
+    email: string;
+    role: string;
+    heroImage: Image;
+    name: string;
+    phoneNumber: string;
+    profilePic: Image;
+}

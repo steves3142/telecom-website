@@ -6,13 +6,12 @@ import React from 'react';
 import Contact from '../components/Contact'
 import Header from '../components/Header'
 import type { GetStaticProps } from 'next';
-import { Project } from "../typings"
+import { Project, PageInfo } from "../typings"
 import { fetchProjects } from '../utils/fetchProjects';
 
 type Props = {
   projects: Project[];
 }
-
 
 const Home = ({ projects }: Props) => {
   return (
@@ -49,17 +48,16 @@ const Home = ({ projects }: Props) => {
 
 export default Home;
 
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  const projects: Project[] = await fetchProjects();
 
-// export const getStaticProps: GetStaticProps<Props> = async () => {
-//   const projects: Project[] = await fetchProjects();
-
-//   return {
-//     props: {
-//       projects
-//     },
-//     // Next.js will attempt to re-generate the page:
-//     //- When a request comes in 
-//     //- At most once every 10 seconds
-//     revalidate: 10,
-//   };
-// };
+  return {
+    props: {
+      projects
+    },
+    // Next.js will attempt to re-generate the page:
+    //- When a request comes in 
+    //- At most once every 10 seconds
+    revalidate: 10,
+  };
+};
