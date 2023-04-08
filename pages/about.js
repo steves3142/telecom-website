@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Image from "next/image"
 import AboutUsImage from "../images/tower_base.jpg";
-import HeroAbout from "../components/HeroAbout.js";
+import HeroAbout from "../components/HeroAbout.tsx";
 
 const stats = [
     { label: 'Founded', value: '2001' },
