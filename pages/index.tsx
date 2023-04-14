@@ -6,7 +6,7 @@ import React from 'react';
 import Contact from '../components/Contact'
 import Header from '../components/Header'
 import type { GetStaticProps } from 'next';
-import { Project, PageInfo } from "../typings"
+import { Project } from "../typings"
 import { fetchProjects } from '../utils/fetchProjects';
 
 type Props = {

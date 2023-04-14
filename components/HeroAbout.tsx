@@ -1,19 +1,18 @@
 import HeroHeader from "./HeroHeader";
 import Image from "next/image"
 import AboutHeader from "../images/golden.jpg"
-import { PageInfo } from "../typings"
-import { fetchPageInfo } from '../utils/fetchPageInfo';
-import type { GetStaticProps } from 'next';
+import { Skill } from "../typings"
+import { urlFor } from '../sanity';
 
 type Props = {
-  pageInfo: PageInfo;
+  skills: Skill[];
 }
 
-const HeroAbout = () => {
+const HeroAbout = ({ skills }: Props) => {
   return (
     <div>
       <div className="relative">
-        <Image alt="" className="bg-hero-about" src={AboutHeader} />
+        <img alt="" className="bg-hero-about" src={urlFor(skills[5].image).url()}/>
         <main className="absolute top-0 left-0 right-0">
           <HeroHeader />
 
@@ -55,17 +54,3 @@ const HeroAbout = () => {
 }
 
 export default HeroAbout;
-
-export const getStaticProps: GetStaticProps<Props> = async () => {
-  const pageInfo: PageInfo = await fetchPageInfo();
-
-  return {
-    props: {
-      pageInfo,
-    },
-    // Next.js will attempt to re-generate the page:
-    //- When a request comes in 
-    //- At most once every 10 seconds
-    revalidate: 10,
-  };
-};
