@@ -12,7 +12,7 @@ const HeroAbout = ({ skills }: Props) => {
   return (
     <div>
       <div className="relative">
-        <img alt="" className="bg-hero-about" src={urlFor(skills[5].image).url()}/>
+        <img alt="" className="bg-hero-about" src={urlFor(skills[8].image).url()}/>
         <main className="absolute top-0 left-0 right-0">
           <HeroHeader />
 

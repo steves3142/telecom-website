@@ -1,11 +1,9 @@
 import Image from "next/image"
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import AboutUsImage from "../images/tower_base.jpg";
 import HeroAbout from "../components/HeroAbout";
 import type { GetStaticProps } from 'next';
-import { PageInfo, Experience, Skill } from "../typings"
-import { fetchPageInfo } from '../utils/fetchPageInfo';
+import { Experience, Skill } from "../typings"
 import { fetchExperiences } from "../utils/fetchExperiences";
 import { fetchSkills } from '../utils/fetchSkills';
 import { urlFor } from '../sanity';
@@ -29,7 +27,7 @@ const About = ( { experiences, skills }: Props) => {
             <HeroAbout skills={skills}/>
 
             <div className="sticky top-0 z-10">
-                <Header />
+                <Header skills={skills}/>
             </div>
 
             <div className="relative bg-white py-16 sm:py-24">
@@ -146,7 +144,6 @@ export default About;
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
     const experiences: Experience[] = await fetchExperiences();
-    const pageInfo: PageInfo = await fetchPageInfo(); 
     const skills: Skill[] = await fetchSkills();
   
     return {
