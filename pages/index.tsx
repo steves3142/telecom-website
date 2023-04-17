@@ -42,7 +42,7 @@ const Home = ({ projects, skills }: Props) => {
       </main>
 
       {/* Footer */}
-      <Footer />
+      <Footer skills={skills}/>
 
     </div>
   )

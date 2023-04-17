@@ -2,7 +2,7 @@ import React, { useState, useMemo, useRef } from 'react';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 import Header from "./Header"
 
-import HeroHeader from "./HeroHeader"
+import HeroHeader from "../components/HeroHeader"
 import FirstPageHeader from "../images/fall.jpeg"
 import Image from "next/image"
 
@@ -40,7 +40,7 @@ const Hero = ( { skills }: Props ) => {
                 <img className="bg-hero-about" src={urlFor(skills[4].image).url()} />
 
                 <div className="absolute top-0 left-0 right-0">
-                    <HeroHeader />
+                    <HeroHeader skills={skills}/>
                     {/* <div className="sticky top-0">
                         {showOnScroll ?
                             <Header /> :

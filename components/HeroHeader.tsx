@@ -3,8 +3,12 @@ import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'; 
 import Image from 'next/image'; 
-import MSNT from '../images/MSNT_Logo.png'
+import { Skill } from "../typings"
+import { urlFor } from '../sanity';
 
+type Props = {
+    skills: Skill[];
+}
 
 
 const navigation = [
@@ -14,7 +18,7 @@ const navigation = [
     { name: 'Contact', href: `${process.env.NEXT_PUBLIC_BASE_URL}/contact-us`, current: false },
 ]
 
-function HeroHeader() {
+const HeroHeader = ( { skills }:Props ) => {
     return(
         <div>
             <Popover as="header" className="relative">
@@ -29,9 +33,9 @@ function HeroHeader() {
                                         src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                                         alt=""
                                     /> */}
-                                    <Image 
+                                    <img 
                                     className="h-36 w-auto"
-                                    src={MSNT}
+                                    src={urlFor(skills[6].image).url()}
                                     />
                                  </Link>
                                 <div className="-mr-2 flex items-center md:hidden">

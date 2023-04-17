@@ -304,7 +304,7 @@ const Contact = ( { skills  }: Props) => {
             </div>
 
 
-            <Footer />
+            <Footer skills={skills}/>
         </div>
     )
 }

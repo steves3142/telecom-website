@@ -1,4 +1,4 @@
-import HeroHeader from "./HeroHeader";
+import HeroHeader from "../components/HeroHeader"
 import Image from "next/image"
 import AboutHeader from "../images/golden.jpg"
 import { Skill } from "../typings"
@@ -14,7 +14,7 @@ const HeroAbout = ({ skills }: Props) => {
       <div className="relative">
         <img alt="" className="bg-hero-about" src={urlFor(skills[8].image).url()}/>
         <main className="absolute top-0 left-0 right-0">
-          <HeroHeader />
+          <HeroHeader skills={skills}/>
 
           <div className="pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14">
             <div className="mx-40 max-w-6xl lg:px-8">

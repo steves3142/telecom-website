@@ -523,7 +523,7 @@ const Wireless = ( { skills, experiences }:Props) => {
         </div>
       </main>
 
-      <Footer />
+      <Footer skills={skills}/>
     </div>
   )
 }

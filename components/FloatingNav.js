@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useRef } from 'react';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 import Header from "../components/Header"
-import HeroHeader from "./HeroHeader"
+import HeroHeader from "../components/HeroHeader"
 
 
 function FloatingNav() {

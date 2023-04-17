@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from 'next/link';
-import SilverLogo from "../images/MSNT_silver_logo.png"
+import { Skill } from "../typings"
+import { urlFor } from '../sanity';
 
 const navigation = {
   about: [
@@ -64,7 +65,11 @@ const navigation = {
   ],
 }
 
-export default function Footer() {
+type Props = {
+  skills: Skill[];
+}
+
+const Footer = ( { skills }: Props) => {
   return (
     <footer className="bg-gray-900" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
@@ -78,9 +83,9 @@ export default function Footer() {
               alt="Company name"
             /> */}
           <Link href="/">
-            <Image
+            <img
               className="h-10 w-auto"
-              src={SilverLogo}
+              src={urlFor(skills[7].image).url()}
             />
           </Link>
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
@@ -142,3 +147,5 @@ export default function Footer() {
     </footer>
   )
 }
+
+export default Footer;

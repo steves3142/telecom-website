@@ -16,7 +16,7 @@ const HeroWireless = ({ skills }: Props) => {
             <div className="relative">
             <img alt="" className="bg-hero-about" src={urlFor(skills[5].image).url()} />
                 <div className="absolute top-0 left-0 right-0">
-                    <HeroHeader />
+                    <HeroHeader skills={skills}/>
 
                     <main>
                         <div className="pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14">

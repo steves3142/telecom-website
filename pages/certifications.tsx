@@ -168,7 +168,7 @@ const Certifications = ( { skills }: Props) => {
                 </div>
             </div>
 
-            <Footer />
+            <Footer skills={skills}/>
         </div>
     )
 }

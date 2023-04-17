@@ -5,7 +5,6 @@ import Header from "../components/Header";
 import type { GetStaticProps } from 'next';
 import { Skill } from "../typings"
 import { fetchSkills } from '../utils/fetchSkills';
-import { urlFor } from '../sanity';
 
 
 type Props = {
@@ -124,7 +123,7 @@ const Contact = ( { skills }:Props ) => {
             </div>
 
 
-            <Footer />
+            <Footer skills={skills}/>
         </div>
     )
 }
