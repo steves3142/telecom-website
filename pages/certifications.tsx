@@ -1,11 +1,10 @@
-import React from "react";
-import Footer from "../components/Footer";
-import HeroCert from "../components/HeroCert";
-import Header from "../components/Header";
-import type { GetStaticProps } from 'next';
+import React from "react"
+import Footer from "../components/Footer"
+import HeroCert from "../components/HeroCert"
+import Header from "../components/Header"
+import type { GetStaticProps } from "next" 
 import { Skill } from "../typings"
-import { fetchSkills } from '../utils/fetchSkills';
-import { urlFor } from '../sanity';
+import { fetchSkills } from "../utils/fetchSkills"
 
 type Props = {
     skills: Skill[];
