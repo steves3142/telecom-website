@@ -17,7 +17,7 @@ const Contact = ( { skills }:Props ) => {
             <HeroTerms skills={skills} />
 
             <div className="sticky top-0 z-10">
-                <Header skills={skills}/>
+                <Header />
             </div>
             
             <div className="relative overflow-hidden bg-white py-16">

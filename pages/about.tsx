@@ -27,7 +27,7 @@ const About = ({ experiences, skills }: Props) => {
             <HeroAbout skills={skills} />
 
             <div className="sticky top-0 z-10">
-                <Header skills={skills} />
+                <Header />
             </div>
 
             <div className="grid-cols-1">

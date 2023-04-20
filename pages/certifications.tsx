@@ -16,7 +16,7 @@ const Certifications = ( { skills }: Props) => {
             <HeroCert skills={skills} />
             
             <div className="sticky top-0 z-10">
-                <Header skills={skills}/>
+                <Header/>
             </div>
 
 
