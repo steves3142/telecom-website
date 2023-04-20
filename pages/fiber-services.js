@@ -20,9 +20,11 @@ const plans = [
     //   priceMonthly: 5,
     //   priceYearly: 56,
     mainFeatures: [
-      { id: 1, value: 'Southern California' },
+      { id: 1, value: 'Florida' },
       { id: 2, value: 'New Jersey / New York metropolitan area' },
-      { id: 3, value: 'North Carolina' }
+      { id: 3, value: 'New York' },
+      { id: 4, value: 'Connecticut' },
+      { id: 5, value: 'Pennsylvania' }
     ],
   },
   {
@@ -103,7 +105,7 @@ export default function Fiber() {
             </div>
             {/* Pricing section */}
             <div>
-              <div className="bg-indigo-600">
+              <div className="bg-blue-800">
                 {/* Overlapping background */}
 
                 <div className="mx-auto max-w-2xl px-4 pt-16 text-center sm:px-6 sm:pt-32 lg:max-w-7xl lg:px-8">
@@ -111,7 +113,7 @@ export default function Fiber() {
                     <span className="block lg:inline">MSNT </span>
                     <span className="block lg:inline">Services</span>
                   </h1>
-                  <p className="mt-4 text-xl text-indigo-100">
+                  <p className="mt-4 text-xl text-blue-100">
                     Everything you need, nothing you don't. Find the services that best suits your business.
                   </p>
                 </div>
@@ -122,7 +124,7 @@ export default function Fiber() {
                   {/* Decorative background */}
                   <div
                     aria-hidden="true"
-                    className="absolute inset-0 top-4 bottom-6 left-8 right-8 hidden rounded-tl-lg rounded-tr-lg bg-indigo-700 lg:block"
+                    className="absolute inset-0 top-4 bottom-6 left-8 right-8 hidden rounded-tl-lg rounded-tr-lg bg-blue-800 lg:block"
                   />
 
                   <div className="relative space-y-6 lg:grid lg:grid-cols-2 lg:space-y-0">
@@ -130,14 +132,14 @@ export default function Fiber() {
                       <div
                         key={plan.title}
                         className={classNames(
-                          plan.featured ? 'bg-white ring-2 ring-indigo-700 shadow-md' : 'bg-indigo-700 lg:bg-transparent',
+                          plan.featured ? 'bg-white ring-2 ring-blue-800 shadow-md' : 'bg-blue-800 lg:bg-transparent',
                           'pt-6 px-6 pb-3 rounded-lg lg:px-8 lg:pt-12'
                         )}
                       >
                         <div>
                           <h3
                             className={classNames(
-                              plan.featured ? 'text-indigo-600' : 'text-white',
+                              plan.featured ? 'text-blue-700' : 'text-white',
                               'text-base font-semibold'
                             )}
                           >
@@ -149,8 +151,8 @@ export default function Fiber() {
                               href="#"
                               className={classNames(
                                 plan.featured
-                                  ? 'bg-indigo-600 text-white hover:bg-indigo-700'
-                                  : 'bg-white text-indigo-600 hover:bg-indigo-50',
+                                  ? 'bg-blue-700 text-white hover:bg-blue-800'
+                                  : 'bg-white text-blue-700 hover:bg-blue-50',
                                 'mt-6 w-full inline-block py-2 px-8 border border-transparent rounded-md shadow-sm text-center text-sm font-medium sm:mt-0 sm:w-auto lg:mt-6 lg:w-full'
                               )}
                             >
@@ -165,7 +167,7 @@ export default function Fiber() {
                           className={classNames(
                             plan.featured
                               ? 'border-gray-200 divide-gray-200'
-                              : 'border-indigo-500 divide-indigo-500 divide-opacity-75',
+                              : 'border-blue-600 divide-blue-600 divide-opacity-75',
                             'mt-7 border-t divide-y lg:border-t-0'
                           )}
                         >
@@ -173,7 +175,7 @@ export default function Fiber() {
                             <li key={mainFeature.id} className="flex items-center py-3">
                               <CheckIcon
                                 className={classNames(
-                                  plan.featured ? 'text-indigo-500' : 'text-indigo-200',
+                                  plan.featured ? 'text-blue-600' : 'text-blue-300',
                                   'w-5 h-5 flex-shrink-0'
                                 )}
                                 aria-hidden="true"

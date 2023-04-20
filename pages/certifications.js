@@ -89,7 +89,7 @@ export default function Certifications() {
                             </span>
                         </h1>
                         <p className="mt-8 text-xl leading-8 text-gray-500">
-                            TriStruX is committed to providing a safe workplace for its employees and subcontractors by mandating strict
+                            MSNT is committed to providing a safe workplace for its employees and subcontractors by mandating strict
                             adherence to the Company’s “ZERO TOLERANCE” accident prevention policy, applied through active employee participation
                             in training programs and daily application of Safety Program directives. Employees are encouraged to observe and monitor
                             work processes for deficiencies or areas of improvement and are recognized and compensated for their efforts through
@@ -99,7 +99,7 @@ export default function Certifications() {
                         </p>
                         <p className="mt-8 text-xl leading-8 text-gray-500">
                             Given the nature of the industry and accompanying long work hours, personnel are subject to “training fatigue.” To
-                            counter the effects of such fatigue and to keep employees on track, the TriStruX group of companies mandates a minimum
+                            counter the effects of such fatigue and to keep employees on track, MSNT mandates a minimum
                             of (5) scheduled and unscheduled site audits per week, utilizing a BACK-TO-BASICS approach and checklist to remind
                             employees and subcontractor personnel that rigging safety must not be their only concern. These audits are conducted
                             by Company Safety Directors and Construction Managers, separate from and exclusive to daily Job Safety Analysis or

@@ -85,7 +85,7 @@ export default function Contact() {
                 <div className="relative px-6 lg:px-8">
                     <div className="mx-auto max-w-prose text-lg">
                         <h1>
-                            <span className="block text-center text-lg font-semibold text-indigo-600">Propriety Information</span>
+                            <span className="block text-center text-lg font-semibold text-blue-700">Propriety Information</span>
                             <span className="mt-2 block text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
                                 MSNT Terms & Conditions
                             </span>

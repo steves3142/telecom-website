@@ -15,7 +15,7 @@ export default function Contact() {
 
                         <div className="grid grid-cols-1 lg:grid-cols-3">
                             {/* Contact information */}
-                            <div className="relative overflow-hidden bg-indigo-700 py-10 px-6 sm:px-10 xl:p-12">
+                            <div className="relative overflow-hidden bg-blue-800 py-10 px-6 sm:px-10 xl:p-12">
                                 <div className="pointer-events-none absolute inset-0 sm:hidden" aria-hidden="true">
                                     <svg
                                         className="absolute inset-0 h-full w-full"
@@ -113,33 +113,33 @@ export default function Contact() {
                                     </svg>
                                 </div>
                                 <h3 className="text-lg font-medium text-white">Contact information</h3>
-                                <p className="mt-6 max-w-3xl text-base text-indigo-50">
+                                <p className="mt-6 max-w-3xl text-base text-blue-50">
                                     Drop us a line and we'll get back to you within 48 hours.
                                 </p>
                                 <dl className="mt-8 space-y-6">
                                     <dt>
                                         <span className="sr-only">Phone number</span>
                                     </dt>
-                                    <dd className="flex text-base text-indigo-50">
-                                        <PhoneIcon className="h-6 w-6 flex-shrink-0 text-indigo-200" aria-hidden="true" />
+                                    <dd className="flex text-base text-blue-50">
+                                        <PhoneIcon className="h-6 w-6 flex-shrink-0 text-blue-300" aria-hidden="true" />
                                         <span className="ml-3">+1 (973) 332-6258</span>
                                     </dd>
-                                    <dd className="flex text-base text-indigo-50">
-                                        <PhoneIcon className="h-6 w-6 flex-shrink-0 text-indigo-200" aria-hidden="true" />
+                                    <dd className="flex text-base text-blue-50">
+                                        <PhoneIcon className="h-6 w-6 flex-shrink-0 text-blue-300" aria-hidden="true" />
                                         <span className="ml-3">+1 (862) 257-3336</span>
                                     </dd>
 
                                     <dt>
                                         <span className="sr-only">Email</span>
                                     </dt>
-                                    <dd className="flex text-base text-indigo-50">
-                                        <EnvelopeIcon className="h-6 w-6 flex-shrink-0 text-indigo-200" aria-hidden="true" />
+                                    <dd className="flex text-base text-blue-50">
+                                        <EnvelopeIcon className="h-6 w-6 flex-shrink-0 text-blue-300" aria-hidden="true" />
                                         <span className="ml-3">msusanibar@msnt-telecom.com</span>
                                     </dd>
                                 </dl>
                                 <ul role="list" className="mt-8 flex space-x-12">
                                     <li>
-                                        <a className="text-indigo-200 hover:text-indigo-100" href="#">
+                                        <a className="text-blue-300 hover:text-blue-200" href="#">
                                             <span className="sr-only">Facebook</span>
                                             <svg
                                                 width={24}
@@ -158,7 +158,7 @@ export default function Contact() {
                                         </a>
                                     </li>
                                     <li>
-                                        <a className="text-indigo-200 hover:text-indigo-100" href="#">
+                                        <a className="text-blue-300 hover:text-blue-200" href="#">
                                             <span className="sr-only">LinkedIn</span>
                                             <svg className="h-7 w-7" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
                                                 <path
@@ -186,7 +186,7 @@ export default function Contact() {
                                                 name="first-name"
                                                 id="first-name"
                                                 autoComplete="given-name"
-                                                className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                                                className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-blue-600 focus:ring-blue-600"
                                             />
                                         </div>
                                     </div>
@@ -200,7 +200,7 @@ export default function Contact() {
                                                 name="last-name"
                                                 id="last-name"
                                                 autoComplete="family-name"
-                                                className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                                                className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-blue-600 focus:ring-blue-600"
                                             />
                                         </div>
                                     </div>
@@ -214,7 +214,7 @@ export default function Contact() {
                                                 name="email"
                                                 type="email"
                                                 autoComplete="email"
-                                                className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                                                className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-blue-600 focus:ring-blue-600"
                                             />
                                         </div>
                                     </div>
@@ -230,7 +230,7 @@ export default function Contact() {
                                                 name="phone"
                                                 id="phone"
                                                 autoComplete="tel"
-                                                className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                                                className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-blue-600 focus:ring-blue-600"
                                                 aria-describedby="phone-optional"
                                             />
                                         </div>
@@ -244,7 +244,7 @@ export default function Contact() {
                                                 type="text"
                                                 name="business"
                                                 id="business"
-                                                className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                                                className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-blue-600 focus:ring-blue-600"
                                             />
                                         </div>
                                     </div>
@@ -257,7 +257,7 @@ export default function Contact() {
                                                 type="text"
                                                 name="subject"
                                                 id="subject"
-                                                className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                                                className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-blue-600 focus:ring-blue-600"
                                             />
                                         </div>
                                     </div>
@@ -275,7 +275,7 @@ export default function Contact() {
                                                 id="message"
                                                 name="message"
                                                 rows={4}
-                                                className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                                                className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-blue-600 focus:ring-blue-600"
                                                 aria-describedby="message-max"
                                                 defaultValue={''}
                                             />
@@ -284,7 +284,7 @@ export default function Contact() {
                                     <div className="sm:col-span-2 sm:flex sm:justify-end">
                                         <button
                                             type="submit"
-                                            className="mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
+                                            className="mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-blue-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 sm:w-auto"
                                         >
                                             Submit
                                         </button>

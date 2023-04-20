@@ -2,13 +2,15 @@ import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'; 
-import { ChevronRightIcon } from '@heroicons/react/20/solid'
+import Image from 'next/image'; 
+import MSNT from '../images/MSNT_Logo.png'
+
 
 
 const navigation = [
     { name: 'About', href: `${process.env.NEXT_PUBLIC_BASE_URL}/about`, current: false },
     { name: 'Wireless Services',  href: `${process.env.NEXT_PUBLIC_BASE_URL}/wireless-services`, current: false },
-    { name: 'Fiber Services', href: `${process.env.NEXT_PUBLIC_BASE_URL}/fiber-services`, current: false },
+    { name: 'Certifications', href: `${process.env.NEXT_PUBLIC_BASE_URL}/certifications`, current: false },
     { name: 'Contact', href: `${process.env.NEXT_PUBLIC_BASE_URL}/contact-us`, current: false },
 ]
 
@@ -22,10 +24,14 @@ function HeroHeader() {
                             <div className="flex w-full items-center justify-between md:w-auto">
                                 <Link href="/">
                                     {/* <span className="sr-only">Your Company</span> */}
-                                    <img
+                                    {/* <img
                                         className="h-8 w-auto sm:h-10"
                                         src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                                         alt=""
+                                    /> */}
+                                    <Image 
+                                    className="h-36 w-auto"
+                                    src={MSNT}
                                     />
                                  </Link>
                                 <div className="-mr-2 flex items-center md:hidden">
@@ -35,9 +41,9 @@ function HeroHeader() {
                                     </Popover.Button>
                                 </div>
                             </div>
-                            <div className="hidden space-x-8 md:ml-10 md:flex">
+                            <div className="hidden space-x md:ml-10 md:flex">
                                 {navigation.map((item) => (
-                                    <a key={item.name} href={item.href} className="rounded-md text-base font-medium text-white hover:bg-[#5a5a5a1a] ">
+                                    <a key={item.name} href={item.href} className="rounded-xl text-2xl font-medium py-2 px-4 text-white transition duration-300 hover:ease-in hover:bg-[#5a5a5a1a]">
                                         {item.name}
                                     </a>
                                 ))}
