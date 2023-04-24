@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import HeroWireless from "../components/HeroWireless";
 import type { GetStaticProps } from 'next';
-import { Experience, Skill } from "../typings"
+import { Experience, Skill, PageInfo } from "../typings"
 import { fetchExperiences } from "../utils/fetchExperiences";
 import { fetchSkills } from '../utils/fetchSkills';
 import { urlFor } from '../sanity';
@@ -79,122 +79,7 @@ const plans = [
     ],
   }
 ]
-const features = [
-  {
-    title: 'Tax Savings',
-    tiers: [
-      { title: 'starter', value: true },
-      { title: 'popular', featured: true, value: true },
-      { title: 'intermediate', value: true },
-    ],
-  },
-  {
-    title: 'Easy to use accounting',
-    tiers: [
-      { title: 'starter', value: true },
-      { title: 'popular', featured: true, value: true },
-      { title: 'intermediate', value: true },
-    ],
-  },
-  {
-    title: 'Multi-accounts',
-    tiers: [
-      { title: 'starter', value: '3 accounts' },
-      { title: 'popular', featured: true, value: 'Unlimited accounts' },
-      { title: 'intermediate', value: '7 accounts' },
-    ],
-  },
-  {
-    title: 'Invoicing',
-    tiers: [
-      { title: 'starter', value: '3 invoices' },
-      { title: 'popular', featured: true, value: 'Unlimited invoices' },
-      { title: 'intermediate', value: '10 invoices' },
-    ],
-  },
-  {
-    title: 'Exclusive offers',
-    tiers: [
-      { title: 'starter', value: false },
-      { title: 'popular', featured: true, value: true },
-      { title: 'intermediate', value: true },
-    ],
-  },
-  {
-    title: '6 months free advisor',
-    tiers: [
-      { title: 'starter', value: false },
-      { title: 'popular', featured: true, value: true },
-      { title: 'intermediate', value: true },
-    ],
-  },
-  {
-    title: 'Mobile and web access',
-    tiers: [
-      { title: 'starter', value: false },
-      { title: 'popular', featured: true, value: true },
-      { title: 'intermediate', value: false },
-    ],
-  },
-]
-const perks = [
-  {
-    title: '24/7 customer support',
-    tiers: [
-      { title: 'starter', value: true },
-      { title: 'popular', featured: true, value: true },
-      { title: 'intermediate', value: true },
-    ],
-  },
-  {
-    title: 'Instant notifications',
-    tiers: [
-      { title: 'starter', value: true },
-      { title: 'popular', featured: true, value: true },
-      { title: 'intermediate', value: true },
-    ],
-  },
-  {
-    title: 'Budgeting tools',
-    tiers: [
-      { title: 'starter', value: true },
-      { title: 'popular', featured: true, value: true },
-      { title: 'intermediate', value: true },
-    ],
-  },
-  {
-    title: 'Digital receipts',
-    tiers: [
-      { title: 'starter', value: true },
-      { title: 'popular', featured: true, value: true },
-      { title: 'intermediate', value: true },
-    ],
-  },
-  {
-    title: 'Pots to separate money',
-    tiers: [
-      { title: 'starter', value: false },
-      { title: 'popular', featured: true, value: true },
-      { title: 'intermediate', value: true },
-    ],
-  },
-  {
-    title: 'Free bank transfers',
-    tiers: [
-      { title: 'starter', value: false },
-      { title: 'popular', featured: true, value: true },
-      { title: 'intermediate', value: false },
-    ],
-  },
-  {
-    title: 'Business debit card',
-    tiers: [
-      { title: 'starter', value: false },
-      { title: 'popular', featured: true, value: true },
-      { title: 'intermediate', value: false },
-    ],
-  },
-]
+
 const faqs = [
   {
     id: 1,
@@ -240,49 +125,49 @@ const files = [
     size: '3.9 MB',
     source:
       'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-  }, 
+  },
   {
     title: 'IMG_4985.HEIC',
     size: '3.9 MB',
     source:
       'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-  }, 
+  },
   {
     title: 'IMG_4985.HEIC',
     size: '3.9 MB',
     source:
       'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-  }, 
+  },
   {
     title: 'IMG_4985.HEIC',
     size: '3.9 MB',
     source:
       'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-  }, 
+  },
   {
     title: 'IMG_4985.HEIC',
     size: '3.9 MB',
     source:
       'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-  }, 
+  },
   {
     title: 'IMG_4985.HEIC',
     size: '3.9 MB',
     source:
       'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-  }, 
+  },
   {
     title: 'IMG_4985.HEIC',
     size: '3.9 MB',
     source:
       'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-  }, 
+  },
   {
     title: 'IMG_4985.HEIC',
     size: '3.9 MB',
     source:
       'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-  }, 
+  },
 
 ]
 
@@ -572,21 +457,35 @@ const Wireless = ({ skills, experiences }: Props) => {
             </section> */}
           </div>
 
-             {/* Images with details */}
+          {/* Images with details */}
 
-             <ul role="list" className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
-              {files.map((file) => (
-                <li key={file.source} className="relative">
+          {/* <ul role="list" className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
+            {files.map((file) => (
+              <li key={file.source} className="relative">
+                <div className="group aspect-h-21 aspect-w-30 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
+                  <img src={file.source} alt="" className="pointer-events-none object-cover group-hover:opacity-75" />
+                  <button type="button" className="absolute inset-0 focus:outline-none">
+                    <span className="sr-only">View details for {file.title}</span>
+                  </button>
+                </div>
+                <p className="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">{file.title}</p>
+                <p className="pointer-events-none block text-sm font-medium text-gray-500">{file.size}</p>
+              </li>
+            ))} */}
+
+            <ul role="list" className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
+              {experiences.map((picture) => (
+                <li key={picture._id} className="relative">
                   <div className="group aspect-h-21 aspect-w-30 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
-                    <img src={file.source} alt="" className="pointer-events-none object-cover group-hover:opacity-75" />
+                    <img src={urlFor(picture.companyImage).url()} alt="" className="pointer-events-none object-cover group-hover:opacity-75" />
                     <button type="button" className="absolute inset-0 focus:outline-none">
-                      <span className="sr-only">View details for {file.title}</span>
+                      
                     </button>
                   </div>
-                  <p className="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">{file.title}</p>
-                  <p className="pointer-events-none block text-sm font-medium text-gray-500">{file.size}</p>
                 </li>
               ))}
+
+
             </ul>
 
         </div>
