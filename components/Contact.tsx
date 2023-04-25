@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Map from '../images/map.png'
 import { Skill } from "../typings"
 import { urlFor } from '../sanity';
-import emailjs from 'emailjs-com'; 
 
 type Props = {
     skills: Skill[];
