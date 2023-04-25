@@ -16,25 +16,7 @@ const navigation = [
   { name: 'Company', href: '#' },
 ]
 const plans = [
-  {
-    title: 'FIBER & 5G SERVICES',
-    featured: false,
-    description: '',
-    //   priceMonthly: 5,
-    //   priceYearly: 56,
-    mainFeatures: [
-      { id: 1, value: 'Aerial Network Construction' },
-      { id: 2, value: 'Make Ready Lashing Fiber' },
-      { id: 3, value: 'New Underground Construction and Restoration' },
-      { id: 4, value: 'Node Installation, Utility Pole, Street Light, Traffic Light, Strand Mount' },
-      { id: 5, value: 'Fiber Splicing, Single and Ribbon' },
-      { id: 6, value: 'OTDR Testing' },
-      { id: 7, value: 'Hub Build Outs' },
-      { id: 8, value: 'Professional Red Lines / As-Builts' },
-      { id: 9, value: 'Make Ready and TCP' },
-      { id: 10, value: '24/7 Maintenance and Repair' },
-    ],
-  },
+
   {
     title: 'TELECOMMUNICATION SERVICES',
     featured: true,
@@ -42,24 +24,22 @@ const plans = [
     //   priceMonthly: 19,
     //   priceYearly: 220,
     mainFeatures: [
-      { id: 1, value: 'Site acquistion, design, & permitting' },
-      { id: 2, value: 'Project tracking & management' },
-      { id: 3, value: 'New site construction' },
-      { id: 4, value: 'Monopole, Self-Support & Guyed tower erection' },
-      { id: 5, value: 'Temporary Tower' },
-      { id: 6, value: 'Small Cell site build' },
-      { id: 7, value: 'IDAS & ODAS System installation' },
-      { id: 8, value: 'Site Decomissioning' },
-      { id: 9, value: 'Upgrades & Modification' },
-      { id: 10, value: 'Microwaves Installations & Pathing' },
-      { id: 11, value: 'Certified Sweep & PIM testing' },
-      { id: 12, value: 'Tower Mapping' },
-      { id: 13, value: '24/7 Maintenance' },
+      { id: 1, value: 'New site construction' },
+      { id: 2, value: 'Monopole, Self-Support & Guyed tower erection' },
+      { id: 3, value: 'Temporary Tower' },
+      { id: 4, value: 'Small Cell site build' },
+      { id: 5, value: 'IDAS & ODAS System installation' },
+      { id: 6, value: 'Site Decomissioning' },
+      { id: 7, value: 'Upgrades & Modification' },
+      { id: 8, value: 'Microwaves Installations & Pathing' },
+      { id: 9, value: 'Certified Sweep & PIM testing' },
+      { id: 10, value: 'Tower Mapping' },
+      { id: 11, value: '24/7 Maintenance' },
     ],
   },
   {
     title: 'CIVIL & OTHER SERVICES',
-    featured: false,
+    featured: true,
     description: '',
     //   priceMonthly: 12,
     //   priceYearly: 140,
@@ -216,7 +196,7 @@ const Wireless = ({ skills, experiences }: Props) => {
                     className="absolute inset-0 top-4 bottom-6 left-8 right-8 hidden rounded-tl-lg rounded-tr-lg bg-blue-900 lg:block"
                   />
 
-                  <div className="relative space-y-6 lg:grid lg:grid-cols-3 lg:space-y-0">
+                  <div className="relative space-y-6 lg:grid lg:grid-cols-2 lg:space-y-0">
                     {plans.map((plan) => (
                       <div
                         key={plan.title}

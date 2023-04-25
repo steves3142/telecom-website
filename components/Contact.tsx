@@ -2,10 +2,18 @@ import Image from 'next/image';
 import Map from '../images/map.png'
 import { Skill } from "../typings"
 import { urlFor } from '../sanity';
+import emailjs from 'emailjs-com'; 
 
 type Props = {
     skills: Skill[];
   }
+
+//   const sendEmail(e) {
+//     e.preventDefault();
+
+//     emailjs.sendForm()
+
+//   }
 
   const Contact = ( { skills }: Props) => {
     return (
@@ -26,7 +34,8 @@ type Props = {
                         <p className="mt-2 text-lg leading-8 text-gray-600">
                             MSNT is licensed and provides a full portfolio of services in more than 10 states nationwide. For more information about where we are currently licensed, please utilize the form below to reach out to our licensing department.
                         </p>
-                        <form action="#" method="POST" className="mt-16">
+                        <form action="#" method="" className="mt-16">
+                        {/* <form action="#" method="" className="mt-16" onSubmit={sendEmail}> */}
                             <div className="grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2">
                                 <div>
                                     <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
