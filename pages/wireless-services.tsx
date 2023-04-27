@@ -25,16 +25,16 @@ const plans = [
     //   priceYearly: 220,
     mainFeatures: [
       { id: 1, value: 'New site construction' },
-      { id: 2, value: 'Monopole, Self-Support & Guyed tower erection' },
-      { id: 3, value: 'Temporary Tower' },
+      { id: 2, value: 'Upgrades & Modification' },
+      { id: 3, value: 'Monopole, Self-Support & Guyed tower erection' },
       { id: 4, value: 'Small Cell site build' },
       { id: 5, value: 'IDAS & ODAS System installation' },
       { id: 6, value: 'Site Decomissioning' },
-      { id: 7, value: 'Upgrades & Modification' },
-      { id: 8, value: 'Microwaves Installations & Pathing' },
+      { id: 7, value: 'Microwaves Installations & Pathing' },
       { id: 9, value: 'Certified Sweep & PIM testing' },
       { id: 10, value: 'Tower Mapping' },
       { id: 11, value: '24/7 Maintenance' },
+      { id: 12, value: 'Temporary Tower' },
     ],
   },
   {
@@ -45,17 +45,16 @@ const plans = [
     //   priceYearly: 140,
     mainFeatures: [
       { id: 1, value: 'Concrete Repair and Restoration' },
-      { id: 2, value: 'Hand Hole and Vault Installation' },
-      { id: 3, value: 'Mule Tape and Locate Tape Installation' },
-      { id: 4, value: 'Utility Locates' },
-      { id: 5, value: 'Excavation' },
-      { id: 6, value: 'Rock Saw, Directional Boring, Trenching' },
-      { id: 7, value: 'Steel Installation' },
-      { id: 8, value: 'Utility Coordination & Design' },
-
-      { id: 6, value: 'Landscaping' },
-      { id: 7, value: 'Outdoor Stealthing installation' },
-      { id: 8, value: 'HVAC Installations, upgrades, and maintenance' }
+      { id: 2, value: 'Rock Saw, Directional Boring, Trenching' },
+      { id: 3, value: 'Landscaping' },
+      { id: 4, value: 'Mule Tape and Locate Tape Installation' },
+      { id: 5, value: 'Utility Coordination & Design' },
+      { id: 6, value: 'Outdoor Stealthing installation' },
+      { id: 7, value: 'Excavation' },
+      { id: 8, value: 'Steel Installation' },
+      { id: 9, value: 'Hand Hole and Vault Installation' },
+      { id: 10, value: 'Utility Locates' },
+      { id: 11, value: 'HVAC Installations, upgrades, and maintenance' }
     ],
   }
 ]
@@ -182,7 +181,7 @@ const Wireless = ({ skills, experiences }: Props) => {
                     <span className="block lg:inline">Services</span>
                   </h1>
                   <p className="mt-4 text-xl text-blue-100">
-                    Everything you need, nothing you don't. Find the services that best suits your business.
+                    Find the services that best suits your next project.
                   </p>
                 </div>
 
@@ -239,7 +238,6 @@ const Wireless = ({ skills, experiences }: Props) => {
                               </div>
                             </div>
                             <a
-                              href="#"
                               className={classNames(
                                 plan.featured
                                   ? 'bg-blue-700 text-white hover:bg-blue-800'

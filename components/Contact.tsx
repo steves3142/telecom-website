@@ -31,7 +31,7 @@ type Props = {
                     <div className="p-4 first-letter:mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
                         <h2 className="text-3xl font-bold tracking-tight text-gray-900">Let's work together</h2>
                         <p className="mt-2 text-lg leading-8 text-gray-600">
-                            MSNT is licensed and provides a full portfolio of services in more than 10 states nationwide. For more information about where we are currently licensed, please utilize the form below to reach out to our licensing department.
+                            MSNT is licensed and provides a full portfolio of services in more than 13 states nationwide. For more information about services and to find out about where we are currently licensed, please utilize the form below to reach out to our licensing department.
                         </p>
                         <form action="#" method="" className="mt-16">
                         {/* <form action="#" method="" className="mt-16" onSubmit={sendEmail}> */}

@@ -15,24 +15,6 @@ type Props = {
 
 const Hero = ( { skills }: Props ) => {
 
-    // const [showOnScroll, setShowOnScroll] = useState(false)
-
-    // useScrollPosition(
-    //     ({ prevPos, currPos }) => {
-    //         console.log(currPos.x)
-    //         console.log(currPos.y)
-    //         const revealPos = -61;
-    //         let isShow = currPos.y < revealPos;
-    //         if (isShow) setShowOnScroll(isShow)
-    //         else {
-    //             isShow = false;
-    //             setShowOnScroll(isShow)
-    //         }
-    //     },
-    //     [showOnScroll]
-    // )
-
-
     return (
         <div>
             <div className="relative">
@@ -41,15 +23,6 @@ const Hero = ( { skills }: Props ) => {
 
                 <div className="absolute top-0 left-0 right-0">
                     <HeroHeader skills={skills}/>
-                    {/* <div className="sticky top-0">
-                        {showOnScroll ?
-                            <Header /> :
-                            <div>
-                                <br></br>
-                                <br></br>
-                                <br></br>
-                            </div>}
-                    </div> */}
 
                     <main>
                         <div className="pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14">

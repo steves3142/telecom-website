@@ -104,7 +104,7 @@ const Certifications = ( { skills }: Props) => {
                             REPORTING & INVESTIGATION, designed to educate employees on how to recognize unsafe conditions and prevent accidents
                             in the workplace.
                         </p>
-                        <p className="mt-8 text-xl leading-8 text-gray-500">
+                        {/* <p className="mt-8 text-xl leading-8 text-gray-500">
                             Given the nature of the industry and accompanying long work hours, personnel are subject to “training fatigue.” To
                             counter the effects of such fatigue and to keep employees on track, MSNT mandates a minimum
                             of (5) scheduled and unscheduled site audits per week, utilizing a BACK-TO-BASICS approach and checklist to remind
@@ -114,7 +114,7 @@ const Certifications = ( { skills }: Props) => {
                             participation in development of safe work procedures and opportunities for recognition through safe actions are a
                             proactive and proven combination, leading to consistent application of Safety Program practices and procedures from
                             the classroom to the field.
-                        </p>
+                        </p> */}
                     </div>
                     <div className="prose prose-lg prose-indigo mx-auto mt-6 text-gray-500">
                         <h2>Safety Training Requirements</h2>
