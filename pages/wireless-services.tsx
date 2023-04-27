@@ -399,6 +399,9 @@ const Wireless = ({ skills, experiences }: Props) => {
                     </span>
                   </h1>
                   <p className="mt-8 text-xl leading-8 text-gray-500">
+                    Interested in what our specialties are? Check out some of our prior work with previous clients. 
+                  </p>
+                  <p className="mt-8 text-xl leading-8 text-gray-500">
                     All materials contained in this website are the property of MSNT or its subsidiaries or affiliated companies
                     and/or third-party licensors. All trade names and trademarks are proprietary to MSNT or its affiliates or
                     licensors. No material from this website or any Internet site owned, operated, licensed or controlled by MSNT or
