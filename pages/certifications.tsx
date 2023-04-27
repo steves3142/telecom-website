@@ -92,17 +92,14 @@ const Certifications = ( { skills }: Props) => {
                     <div className="mx-auto max-w-prose text-lg">
                         <h1>
                             <span className="mt-2 block text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
-                                Safety Program Overview
+                                Overview
                             </span>
                         </h1>
                         <p className="mt-8 text-xl leading-8 text-gray-500">
-                            MSNT is committed to providing a safe workplace for its employees and subcontractors by mandating strict
-                            adherence to the Company’s “ZERO TOLERANCE” accident prevention policy, applied through active employee participation
-                            in training programs and daily application of Safety Program directives. Employees are encouraged to observe and monitor
-                            work processes for deficiencies or areas of improvement and are recognized and compensated for their efforts through
-                            the Company’s “GET HOME SAFE” Incentive Program. This innovative program is based on a proactive policy of NEAR-MISS
-                            REPORTING & INVESTIGATION, designed to educate employees on how to recognize unsafe conditions and prevent accidents
-                            in the workplace.
+                            MSNT is committed to providing a safe workplace for its employeess by mandating strict
+                            adherence to accident prevention policy. MSNT educates its employees on how to recognize unsafe conditions and prevent accidents
+                            in the workplace. Employees have daily safety meetings upon starting shifts at sites and are encouraged to monitor work processes 
+                            for insufficiencies or areas of improvement.
                         </p>
                         {/* <p className="mt-8 text-xl leading-8 text-gray-500">
                             Given the nature of the industry and accompanying long work hours, personnel are subject to “training fatigue.” To
@@ -119,7 +116,7 @@ const Certifications = ( { skills }: Props) => {
                     <div className="prose prose-lg prose-indigo mx-auto mt-6 text-gray-500">
                         <h2>Safety Training Requirements</h2>
                         <p className="mt-8 text-xl leading-8 text-gray-500">
-                            All direct employees and subcontractor personnel working at our managed Construction sites, must have satisfactorily
+                            All employee personnel working at our managed Construction sites, must have satisfactorily
                             completed the following safety training courses based on trade as offered by the Company(s):
                         </p>
                         <ul className="mt-8 text-xl leading-8 text-gray-500" role="list">
@@ -144,9 +141,9 @@ const Certifications = ( { skills }: Props) => {
                                 & Competent Rigger</li>
                             <li>NWSA – TTT-1 & TTT-2</li>
                         </ul>
-                        <p className="mt-8 text-xl leading-8 text-gray-500">
+                        {/* <p className="mt-8 text-xl leading-8 text-gray-500">
                             All personnel who operate Aerial Lift equipment or Forklifts must be certified as operators of that equipment.
-                        </p>
+                        </p> */}
                         {/* <blockquote>
               <p>
                 Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique
