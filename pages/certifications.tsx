@@ -116,7 +116,7 @@ const Certifications = ( { skills }: Props) => {
                     <div className="prose prose-lg prose-indigo mx-auto mt-6 text-gray-500">
                         <h2>Safety Training Requirements</h2>
                         <p className="mt-8 text-xl leading-8 text-gray-500">
-                            All employee personnel working at our managed Construction sites, must have satisfactorily
+                            All employee personnel working on sites must have satisfactorily
                             completed the following safety training courses based on trade as offered by the Company(s):
                         </p>
                         <ul className="mt-8 text-xl leading-8 text-gray-500" role="list">

@@ -121,7 +121,7 @@ const Contact = ( { skills  }: Props) => {
                                 </div>
                                 <h3 className="text-lg font-medium text-white">Contact information</h3>
                                 <p className="mt-6 max-w-3xl text-base text-blue-50">
-                                    Drop us a line and we'll get back to you within 48 hours.
+                                    Drop us a line and we will get back to you within 48 hours.
                                 </p>
                                 <dl className="mt-8 space-y-6">
                                     <dt>
