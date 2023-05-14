@@ -3,23 +3,11 @@
 @tailwind utilities;
 
 @layer components {
-    .bg-hero {
-        background: url('../images/NC_tower.jpg')
-    }
     .bg-hero-about {
         z-index: -1;
     }
-    .bg-hero-wireless {
-        background: url('https://as1.ftcdn.net/v2/jpg/02/74/57/12/1000_F_274571259_ajou4XbAcgX4Vy4za31omw6p5QBT9bYZ.jpg')
-    }
-    .bg-hero-fiber {
-        background: url('https://as1.ftcdn.net/v2/jpg/04/30/61/66/1000_F_430616632_7z93WKUnfN61nG6taIOKmglQK4rVXVPV.jpg')
-    }
-    .bg-hero-contact {
-        background: url('https://as2.ftcdn.net/v2/jpg/03/79/67/39/1000_F_379673965_mF3j32dlklJtTr58ib4xtLGvyPzH6NJj.jpg')
-    }
-    .bg-hero-cert {
-        background: url('../images/tower_arial_view.jpg')
+    .bg-notification {
+        z-index: 50;
     }
     .bg-about-us {
         background: url('../images/tower_base.jpg');
