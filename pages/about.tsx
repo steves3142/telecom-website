@@ -104,10 +104,10 @@ const About = ({ experiences, skills }: Props) => {
                                     <p className="text-lg">
                                         MSNT is a leading independent owner and operator of wireless communications infrastructure including towers, buildings, rooftops, distributed antenna systems (DAS) and small cells.
                                     </p>
-                                    <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-3xl">What we do</h3>
+                                    {/* <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-3xl">What we do</h3>
                                     <p className="text-base leading-7">
-                                        By “SLOGAN HERE®“, MSNT generates revenue from two primary businesses....
-                                    </p>
+                                        We are a subcontractor 
+                                    </p> */}
                                 </div>
                             </div>
 

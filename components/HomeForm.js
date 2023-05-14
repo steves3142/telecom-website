@@ -25,16 +25,12 @@ function ClientSubmitForm() {
                 console.log(result.text);
                 console.log("message sent");
                 toggleShow();
-                // console.log(`${show}`)
             },
                 (error) => {
                     console.log(error.text);
                 }
             );
     }
-
-    console.log('The value of show is now ' + `${show}`)
-
 
     return (
         <div>
