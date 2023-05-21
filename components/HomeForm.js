@@ -12,8 +12,30 @@ function ClientSubmitForm() {
         setShow(true)
     }
 
+
+    const initialForm = {
+        from_name: '', // first name
+        last_name: '', // las name
+        user_email: '', // contact email
+        company: '',
+        phone: '',
+        message: '',
+    }
+
+    const [formState, setFormState] = useState(initialForm)
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        setFormState(initialForm);
+    }
+
+    const handleChange = (event) => {
+        setFormState({ ...formState, [event.target.id]: event.target.value })
+    }
+
     const sendEmail = (e) => {
         e.preventDefault();
+        handleSubmit; 
 
         emailjs
             .sendForm(
@@ -97,6 +119,8 @@ function ClientSubmitForm() {
                                             type="text"
                                             name="from_name"
                                             id="from_name"
+                                            onChange={handleChange}
+                                            value={formState.from_name}
                                             autoComplete="given-name"
                                             className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                         />
@@ -111,6 +135,8 @@ function ClientSubmitForm() {
                                             type="text"
                                             name="last_name"
                                             id="last_name"
+                                            onChange={handleChange}
+                                            value={formState.last_name}
                                             autoComplete="family-name"
                                             className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                         />
@@ -125,6 +151,8 @@ function ClientSubmitForm() {
                                             id="user_email"
                                             name="user_email"
                                             type="email"
+                                            onChange={handleChange}
+                                            value={formState.user_email}
                                             autoComplete="email"
                                             className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                         />
@@ -139,6 +167,8 @@ function ClientSubmitForm() {
                                             type="text"
                                             name="company"
                                             id="company"
+                                            onChange={handleChange}
+                                            value={formState.company}
                                             autoComplete="organization"
                                             className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                         />
@@ -158,6 +188,8 @@ function ClientSubmitForm() {
                                             type="tel"
                                             name="phone"
                                             id="phone"
+                                            onChange={handleChange}
+                                            value={formState.phone}
                                             autoComplete="tel"
                                             aria-describedby="phone-description"
                                             className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -177,10 +209,11 @@ function ClientSubmitForm() {
                                         <textarea
                                             id="message"
                                             name="message"
+                                            onChange={handleChange}
+                                            value={formState.message}
                                             rows={4}
                                             aria-describedby="message-description"
                                             className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                                            defaultValue={''}
                                         />
                                     </div>
                                 </div>

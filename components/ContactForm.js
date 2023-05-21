@@ -13,8 +13,31 @@ function ContactForm() {
         setShow(true)
     }
 
+    const initialForm = {
+        from_name: '', // first name
+        last_name: '', // las name
+        user_email: '', // contact email
+        company: '',
+        phone: '',
+        subject: '',
+        message: '',
+    }
+
+    const [formState, setFormState] = useState(initialForm)
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        setFormState(initialForm);
+    }
+
+    const handleChange = (event) => {
+        setFormState({ ...formState, [event.target.id]: event.target.value })
+    }
+
+
     const sendEmail = (e) => {
-        e.preventDefault();
+        e.preventDefault(); 
+        handleSubmit;
 
         emailjs
             .sendForm(
@@ -256,6 +279,8 @@ function ContactForm() {
                                             type="text"
                                             name="from_name"
                                             id="from_name"
+                                            onChange={handleChange}
+                                            value={formState.from_name}
                                             autoComplete="given-name"
                                             className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-blue-600 focus:ring-blue-600"
                                         />
@@ -270,6 +295,8 @@ function ContactForm() {
                                             type="text"
                                             name="last_name"
                                             id="last_name"
+                                            onChange={handleChange}
+                                            value={formState.last_name}
                                             autoComplete="family-name"
                                             className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-blue-600 focus:ring-blue-600"
                                         />
@@ -284,6 +311,8 @@ function ContactForm() {
                                             id="user_email"
                                             name="user_email"
                                             type="email"
+                                            onChange={handleChange}
+                                            value={formState.user_email}
                                             autoComplete="email"
                                             className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-blue-600 focus:ring-blue-600"
                                         />
@@ -300,6 +329,8 @@ function ContactForm() {
                                             type="tel"
                                             name="phone"
                                             id="phone"
+                                            onChange={handleChange}
+                                            value={formState.phone}
                                             autoComplete="tel"
                                             className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-blue-600 focus:ring-blue-600"
                                             aria-describedby="phone-optional"
@@ -315,6 +346,8 @@ function ContactForm() {
                                             type="text"
                                             name="company"
                                             id="company"
+                                            onChange={handleChange}
+                                            value={formState.company}
                                             autoComplete="organization"
                                             className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-blue-600 focus:ring-blue-600"
                                         />
@@ -329,6 +362,8 @@ function ContactForm() {
                                             type="text"
                                             name="subject"
                                             id="subject"
+                                            onChange={handleChange}
+                                            value={formState.subject}
                                             className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-blue-600 focus:ring-blue-600"
                                         />
                                     </div>
@@ -346,10 +381,11 @@ function ContactForm() {
                                         <textarea
                                             id="message"
                                             name="message"
+                                            onChange={handleChange}
+                                            value={formState.message}
                                             rows={4}
                                             className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-blue-600 focus:ring-blue-600"
                                             aria-describedby="message-description"
-                                            defaultValue={''}
                                         />
                                     </div>
                                 </div>

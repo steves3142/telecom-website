@@ -35,6 +35,7 @@ export default function Header() {
                     <Image
                       className="h-14 w-auto"
                       src={MSNT}
+                      alt=''
                     />
                   </Link>
                 </div>
