@@ -1,9 +1,5 @@
 import React, { useState, useMemo, useRef } from 'react';
-import { useScrollPosition } from '@n8tb1t/use-scroll-position'
-import Header from "./Header"
-
 import HeroHeader from "../components/HeroHeader"
-import FirstPageHeader from "../images/fall.jpeg"
 import Image from "next/image"
 
 import { Skill } from "../typings"
@@ -11,18 +7,27 @@ import { urlFor } from '../sanity';
 
 type Props = {
     skills: Skill[];
-  }
+}
 
-const Hero = ( { skills }: Props ) => {
+const Hero = ({ skills }: Props) => {
 
     return (
         <div>
             <div className="relative">
+                    <Image
+                        className="object-cover -z-1"
+                        src={urlFor(skills[4].image).url()}
+                        sizes="100%"
+                        quality={100}
+                        priority={true}
+                        width={2500}
+                        height={2500}
+                        alt=""
 
-                <img className="bg-hero-about" src={urlFor(skills[4].image).url()} />
+                    />
 
                 <div className="absolute top-0 left-0 right-0">
-                    <HeroHeader skills={skills}/>
+                    <HeroHeader skills={skills} />
 
                     <main>
                         <div className="pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14">
