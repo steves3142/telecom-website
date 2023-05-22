@@ -15,7 +15,7 @@ function ContactForm() {
 
     const initialForm = {
         from_name: '', // first name
-        last_name: '', // las name
+        last_name: '', // last name
         user_email: '', // contact email
         company: '',
         phone: '',
@@ -25,8 +25,7 @@ function ContactForm() {
 
     const [formState, setFormState] = useState(initialForm)
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
+    const handleSubmit = () => {
         setFormState(initialForm);
     }
 
@@ -34,10 +33,9 @@ function ContactForm() {
         setFormState({ ...formState, [event.target.id]: event.target.value })
     }
 
-
     const sendEmail = (e) => {
         e.preventDefault(); 
-        handleSubmit;
+        handleSubmit(e);
 
         emailjs
             .sendForm(

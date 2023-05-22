@@ -15,7 +15,7 @@ function ClientSubmitForm() {
 
     const initialForm = {
         from_name: '', // first name
-        last_name: '', // las name
+        last_name: '', // last name
         user_email: '', // contact email
         company: '',
         phone: '',
@@ -24,8 +24,7 @@ function ClientSubmitForm() {
 
     const [formState, setFormState] = useState(initialForm)
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
+    const handleSubmit = (e) => {
         setFormState(initialForm);
     }
 
@@ -35,7 +34,7 @@ function ClientSubmitForm() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        handleSubmit; 
+        handleSubmit(e); 
 
         emailjs
             .sendForm(
