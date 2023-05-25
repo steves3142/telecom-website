@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useRef } from 'react';
+import React from 'react';
 import HeroHeader from "../components/HeroHeader"
 import Image from "next/image"
 
@@ -14,17 +14,16 @@ const Hero = ({ skills }: Props) => {
     return (
         <div>
             <div className="relative">
-                    <Image
-                        className="object-cover -z-1"
-                        src={urlFor(skills[4].image).url()}
-                        sizes="100%"
-                        quality={100}
-                        priority={true}
-                        width={2500}
-                        height={2500}
-                        alt=""
+                <Image
+                    className="object-cover -z-1"
+                    src={urlFor(skills[4].image).url()}
+                    quality={50}
+                    priority={true}
+                    width={2600}
+                    height={2600}
+                    alt=""
 
-                    />
+                />
 
                 <div className="absolute top-0 left-0 right-0">
                     <HeroHeader skills={skills} />

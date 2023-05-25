@@ -5,16 +5,24 @@ import { urlFor } from '../sanity';
 
 type Props = {
     skills: Skill[];
-  }
+}
 
-const HeroCert = ( { skills }: Props) => {
+const HeroCert = ({ skills }: Props) => {
 
     return (
         <div>
             <div className="relative">
-            <img alt="" className="bg-hero-about" src={urlFor(skills[3].image).url()}/>
+                <Image
+                    className="object-cover -z-1"
+                    src={urlFor(skills[3].image).url()}
+                    quality={20}
+                    priority={true}
+                    width={2600}
+                    height={2600}
+                    alt=""
+                />
                 <div className="absolute top-0 left-0 right-0">
-                    <HeroHeader skills={skills}/>
+                    <HeroHeader skills={skills} />
 
                     <main>
                         <div className="pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14">
@@ -44,7 +52,7 @@ const HeroCert = ( { skills }: Props) => {
                                 </div>
                             </div>
                         </div>
-                        
+
 
                         {/* More main page content here... */}
                     </main>

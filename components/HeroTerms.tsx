@@ -1,8 +1,6 @@
 import React, { useState, useMemo, useRef } from 'react';
-import Header from "./Header"
 import HeroHeader from "./HeroHeader";
 import Image from "next/image";
-import TermsHeader from "../images/red_tower.jpeg"
 import { Skill } from "../typings"
 import { urlFor } from '../sanity';
 
@@ -15,9 +13,17 @@ const HeroTerms = ({ skills }: Props) => {
     return (
         <div>
             <div className="relative">
-                <img alt="" className="bg-hero-about" src={urlFor(skills[1].image).url()} />
+                <Image
+                    className="object-cover -z-1"
+                    src={urlFor(skills[1].image).url()}
+                    quality={20}
+                    priority={true}
+                    width={2600}
+                    height={2600}
+                    alt=""
+                />
                 <div className="absolute top-0 left-0 right-0">
-                    <HeroHeader skills={skills}/>
+                    <HeroHeader skills={skills} />
 
                     <main>
                         <div className="pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14">
