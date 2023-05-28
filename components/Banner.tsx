@@ -1,9 +1,5 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Image from "next/image"
-import ThreeAntennas from "../images/three_antennas.jpg"
-import AntennaArray from "../images/antenna_array.jpg"
-import Crane from "../images/crane.jpg"
 import { Project } from "../typings";
 import { urlFor } from '../sanity';
 

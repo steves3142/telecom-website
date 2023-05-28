@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Link from 'next/link';
 import { Skill } from "../typings"
 import { urlFor } from '../sanity';

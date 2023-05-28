@@ -101,17 +101,6 @@ const Certifications = ( { skills }: Props) => {
                             in the workplace. Employees have daily safety meetings upon starting shifts at sites and are encouraged to monitor work processes 
                             for insufficiencies or areas of improvement.
                         </p>
-                        {/* <p className="mt-8 text-xl leading-8 text-gray-500">
-                            Given the nature of the industry and accompanying long work hours, personnel are subject to “training fatigue.” To
-                            counter the effects of such fatigue and to keep employees on track, MSNT mandates a minimum
-                            of (5) scheduled and unscheduled site audits per week, utilizing a BACK-TO-BASICS approach and checklist to remind
-                            employees and subcontractor personnel that rigging safety must not be their only concern. These audits are conducted
-                            by Company Safety Directors and Construction Managers, separate from and exclusive to daily Job Safety Analysis or
-                            Job Hazard Analysis (JSA/JHA) meetings held each day before the start of work. Unscheduled site visits, employee
-                            participation in development of safe work procedures and opportunities for recognition through safe actions are a
-                            proactive and proven combination, leading to consistent application of Safety Program practices and procedures from
-                            the classroom to the field.
-                        </p> */}
                     </div>
                     <div className="prose prose-lg prose-indigo mx-auto mt-6 text-gray-500">
                         <h2>Safety Training Requirements</h2>
@@ -141,25 +130,6 @@ const Certifications = ( { skills }: Props) => {
                                 & Competent Rigger</li>
                             <li>NWSA – TTT-1 & TTT-2</li>
                         </ul>
-                        {/* <p className="mt-8 text-xl leading-8 text-gray-500">
-                            All personnel who operate Aerial Lift equipment or Forklifts must be certified as operators of that equipment.
-                        </p> */}
-                        {/* <blockquote>
-              <p>
-                Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique
-                pellentesque. Blandit amet, sed aenean erat arcu morbi.
-              </p>
-            </blockquote> */}
-                        {/* <figure>
-              <img
-                className="w-full rounded-lg"
-                src=""
-                alt=""
-                width={1310}
-                height={873}
-              />
-              <figcaption>Sagittis scelerisque nulla cursus in enim consectetur quam.</figcaption>
-            </figure> */}
                     </div>
                 </div>
             </div>

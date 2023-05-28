@@ -21,8 +21,6 @@ const plans = [
     title: 'TELECOMMUNICATION SERVICES',
     featured: true,
     description: '',
-    //   priceMonthly: 19,
-    //   priceYearly: 220,
     mainFeatures: [
       { id: 1, value: 'New site construction' },
       { id: 2, value: 'Upgrades & Modification' },
@@ -41,8 +39,6 @@ const plans = [
     title: 'CIVIL & OTHER SERVICES',
     featured: true,
     description: '',
-    //   priceMonthly: 12,
-    //   priceYearly: 140,
     mainFeatures: [
       { id: 1, value: 'Concrete Repair and Restoration' },
       { id: 2, value: 'Rock Saw, Directional Boring, Trenching' },
@@ -57,97 +53,6 @@ const plans = [
       { id: 11, value: 'HVAC Installations, upgrades, and maintenance' }
     ],
   }
-]
-
-const faqs = [
-  {
-    id: 1,
-    question: "What'other exams do you offer?",
-    answer:
-      "Auto-Refractor, Phoropter, Visual Acuity Test, Color Vision Exams (D-15), Low Contrast Visual Acuity, and Low Vision Contrast Test.",
-  },
-  {
-    id: 2,
-    question: "What CPT codes are accepted for this device?",
-    answer:
-      "92081- Limited Visual Field Examination, 92082- Limited Visual Field Examination, 92083 – Extended Visual Field Examination, 92015 – Refraction, 92283 – Color vision examination"
-  },
-  {
-    id: 3,
-    question: "How do I correct for refractive error?",
-    answer:
-      "Xenon-VR’s lenses are tunable, shape-changing lenses. With patent-pending Liquid Lens Technology, refractive error can be corrected for and adapted to each patient’s refractive needs."
-  },
-  {
-    id: 4,
-    question: "Do I need an eye-patch or eye dilation?",
-    answer:
-      "Xenon-VR devices do not require an eye patch and is a non-mydriatic device. Virtual testing can be presented to one eye at a time, while the other eye remains inactive."
-  },
-  {
-    id: 5,
-    question: "What is the regulatory status of the device?",
-    answer:
-      "Xenon-1 is a Class 1 Medical device and is 510k registered."
-  },
-  {
-    id: 6,
-    question: "How many research studies have been done on the Xenon-1 device?",
-    answer:
-      "Yes, several ongoing studies are being conducted by two different academic institutions in the United States."
-  },
-]
-
-const files = [
-  {
-    title: 'IMG_4985.HEIC',
-    size: '3.9 MB',
-    source:
-      'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-  },
-  {
-    title: 'IMG_4985.HEIC',
-    size: '3.9 MB',
-    source:
-      'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-  },
-  {
-    title: 'IMG_4985.HEIC',
-    size: '3.9 MB',
-    source:
-      'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-  },
-  {
-    title: 'IMG_4985.HEIC',
-    size: '3.9 MB',
-    source:
-      'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-  },
-  {
-    title: 'IMG_4985.HEIC',
-    size: '3.9 MB',
-    source:
-      'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-  },
-  {
-    title: 'IMG_4985.HEIC',
-    size: '3.9 MB',
-    source:
-      'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-  },
-  {
-    title: 'IMG_4985.HEIC',
-    size: '3.9 MB',
-    source:
-      'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-  },
-  {
-    title: 'IMG_4985.HEIC',
-    size: '3.9 MB',
-    source:
-      'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
-  },
-
 ]
 
 function classNames(...classes) {
@@ -221,20 +126,9 @@ const Wireless = ({ skills, experiences }: Props) => {
                                   'text-4xl font-bold tracking-tight'
                                 )}
                               >
-                                {/* ${plan.priceMonthly} */}
-
                               </p>
 
                               <div className="ml-4">
-                                {/* <p className={classNames(plan.featured ? 'text-gray-700' : 'text-white', 'text-sm')}>
-                                USD / mo
-                              </p>
-                              <p className={classNames(plan.featured ? 'text-gray-500' : 'text-indigo-200', 'text-sm')}>
-                                Billed yearly (${plan.priceYearly})
-                              </p> */}
-
-
-
                               </div>
                             </div>
                             <a
@@ -399,7 +293,7 @@ const Wireless = ({ skills, experiences }: Props) => {
                     </span>
                   </h1>
                   <p className="mt-8 text-xl leading-8 text-gray-500">
-                    Interested in what our specialties are? Check out some of our prior work with previous clients. 
+                    Interested in what our specialties are? Check out some of our prior work with previous clients.
                   </p>
                   <p className="mt-8 text-xl leading-8 text-gray-500">
                     All materials contained in this website are the property of MSNT or its subsidiaries or affiliated companies
@@ -454,20 +348,20 @@ const Wireless = ({ skills, experiences }: Props) => {
               </li>
             ))} */}
 
-            <ul role="list" className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
-              {experiences.map((picture) => (
-                <li key={picture._id} className="relative">
-                  <div className="group aspect-h-21 aspect-w-30 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
-                    <img src={urlFor(picture.companyImage).url()} alt="" className="pointer-events-none object-cover group-hover:opacity-75" />
-                    <button type="button" className="absolute inset-0 focus:outline-none">
-                      
-                    </button>
-                  </div>
-                </li>
-              ))}
+          <ul role="list" className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
+            {experiences.map((picture) => (
+              <li key={picture._id} className="relative">
+                <div className="group aspect-h-21 aspect-w-30 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
+                  <img src={urlFor(picture.companyImage).url()} alt="" className="pointer-events-none object-cover group-hover:opacity-75" />
+                  <button type="button" className="absolute inset-0 focus:outline-none">
+
+                  </button>
+                </div>
+              </li>
+            ))}
 
 
-            </ul>
+          </ul>
 
         </div>
       </main>
