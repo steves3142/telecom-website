@@ -47,7 +47,7 @@ const HeroHeader = ( { skills }:Props ) => {
                             </div>
                             <div className="hidden space-x md:ml-10 md:flex">
                                 {navigation.map((item) => (
-                                    <a key={item.name} href={item.href} className="rounded-xl text-2xl font-medium py-2 px-4 text-white transition duration-300 hover:ease-in hover:bg-[#5a5a5a1a]">
+                                    <a key={item.name} href={item.href} className="rounded-xl text-2xl font-medium py-2 px-4 text-white transition duration-300 hover:ease-in hover:bg-[#5a5a5a1a] xl:text-4xl">
                                         {item.name}
                                     </a>
                                 ))}

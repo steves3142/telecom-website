@@ -43,25 +43,25 @@ export default function Header() {
                   {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
                   <Link
                     href="/about"
-                    className="inline-flex items-center border-b-2 hover:border-blue-500 px-1 pt-1 text-sm font-medium text-gray-900"
+                    className="inline-flex items-center border-b-2 hover:border-blue-500 px-1 pt-1 text-sm font-medium text-gray-900 lg:text-xl xl:text-xl"
                   >
                     About
                   </Link>
                   <Link
                     href="wireless-services"
-                    className="inline-flex items-center border-b-2 hover:border-blue-500 px-1 pt-1 text-sm font-medium text-gray-900"
+                    className="inline-flex items-center border-b-2 hover:border-blue-500 px-1 pt-1 text-sm font-medium text-gray-900 lg:text-xl xl:text-xl"
                   >
                     Wireless Services
                   </Link>
                   <Link
                     href="certifications"
-                    className="inline-flex items-center border-b-2 hover:border-blue-500 px-1 pt-1 text-sm font-medium text-gray-900"
+                    className="inline-flex items-center border-b-2 hover:border-blue-500 px-1 pt-1 text-sm font-medium text-gray-900 lg:text-xl xl:text-xl"
                   >
                     Certifications
                   </Link>
                   <Link
                     href="contact-us"
-                    className="inline-flex items-center border-b-2 hover:border-blue-500 px-1 pt-1 text-sm font-medium text-gray-900"
+                    className="inline-flex items-center border-b-2 hover:border-blue-500 px-1 pt-1 text-sm font-medium text-gray-900 lg:text-xl xl:text-xl"
                   >
                     Contact
                   </Link>
