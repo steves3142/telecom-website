@@ -28,7 +28,7 @@ const Hero = ({ skills }: Props) => {
                 <div className="absolute top-0 left-0 right-0">
                     <HeroHeader skills={skills} />
 
-                    <main className="hidden sm:block">
+                    <main className="hidden md:block">
                         <div className="pt-10 xsm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14">
                             <div className="lg:visible">
                                 <div className="mx-40 max-w-6xl lg:px-8">

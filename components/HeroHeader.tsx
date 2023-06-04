@@ -33,7 +33,7 @@ const HeroHeader = ( { skills }:Props ) => {
                                         alt=""
                                     /> */}
                                     <img 
-                                    className="h-36 w-auto lg:h-20 md:h-12 hidden sm:block"
+                                    className="h-36 w-auto lg:h-20 md:h-12 hidden md:block"
                                     src={urlFor(skills[6].image).url()}
                                     />
                                  </Link>
