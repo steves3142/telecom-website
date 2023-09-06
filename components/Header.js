@@ -25,7 +25,7 @@ export default function Header() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <Link href="/">
+                  <Link href="/" prefetch>
                     {/* <img
                     className="hidden h-8 w-auto lg:block"
                     src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
@@ -42,24 +42,28 @@ export default function Header() {
                   {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
                   <Link
                     href="/about"
+                    prefetch
                     className="inline-flex items-center border-b-2 hover:border-blue-500 px-1 pt-1 text-sm font-medium text-gray-900 lg:text-xl xl:text-xl"
                   >
                     About
                   </Link>
                   <Link
                     href="wireless-services"
+                    prefetch
                     className="inline-flex items-center border-b-2 hover:border-blue-500 px-1 pt-1 text-sm font-medium text-gray-900 lg:text-xl xl:text-xl"
                   >
                     Wireless Services
                   </Link>
                   <Link
                     href="certifications"
+                    prefetch
                     className="inline-flex items-center border-b-2 hover:border-blue-500 px-1 pt-1 text-sm font-medium text-gray-900 lg:text-xl xl:text-xl"
                   >
                     Certifications
                   </Link>
                   <Link
                     href="contact-us"
+                    prefetch
                     className="inline-flex items-center border-b-2 hover:border-blue-500 px-1 pt-1 text-sm font-medium text-gray-900 lg:text-xl xl:text-xl"
                   >
                     Contact

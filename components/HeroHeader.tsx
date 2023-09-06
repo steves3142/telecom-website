@@ -25,7 +25,9 @@ const HeroHeader = ( { skills }:Props ) => {
                     <nav className="relative mx-auto flex max-w-7xl items-center justify-between px-6" aria-label="Global">
                         <div className="flex flex-1 items-center">
                             <div className="flex w-full items-center justify-between md:w-auto">
-                                <Link href="/">
+                                <Link href="/"
+                                prefetch
+                                >
                                     {/* <span className="sr-only">Your Company</span> */}
                                     {/* <img
                                         className="h-8 w-auto sm:h-10"
@@ -62,7 +64,9 @@ const HeroHeader = ( { skills }:Props ) => {
                         <div className="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5">
                             <div className="flex items-center justify-between px-5 pt-4">
                                 <div>
-                                    <Link href="/">
+                                    <Link href="/"
+                                    prefetch
+                                    >
                                     <img
                                         className="h-8 w-auto"
                                         src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"

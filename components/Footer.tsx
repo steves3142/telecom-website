@@ -81,7 +81,9 @@ const Footer = ( { skills }: Props) => {
               src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
               alt="Company name"
             /> */}
-          <Link href="/">
+          <Link href="/"
+          prefetch
+          >
             <img
               className="h-10 w-auto"
               src={urlFor(skills[7].image).url()}
