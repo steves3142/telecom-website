@@ -4,10 +4,16 @@ import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 import { Transition } from '@headlessui/react'
 import { CheckCircleIcon } from '@heroicons/react/24/outline'
 import { XMarkIcon } from '@heroicons/react/20/solid'
+import ReCaptcha from './ReCaptcha';
 
 function ContactForm() {
     const form = useRef()
     const [show, setShow] = useState(false)
+    const [recaptchaToken, setRecaptchaToken] = useState(null)
+    const [isRecaptchaVerified, setIsRecaptchaVerified] = useState(false)
+
+    // Add your reCAPTCHA site key here
+    const RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || 'your-site-key-here'
 
     function toggleShow() {
         setShow(true)
@@ -27,14 +33,33 @@ function ContactForm() {
 
     const handleSubmit = () => {
         setFormState(initialForm);
+        setRecaptchaToken(null);
+        setIsRecaptchaVerified(false);
     }
 
     const handleChange = (event) => {
         setFormState({ ...formState, [event.target.id]: event.target.value })
     }
 
+    const handleRecaptchaVerify = (token) => {
+        setRecaptchaToken(token);
+        setIsRecaptchaVerified(true);
+    }
+
+    const handleRecaptchaExpire = () => {
+        setRecaptchaToken(null);
+        setIsRecaptchaVerified(false);
+    }
+
     const sendEmail = (e) => {
         e.preventDefault(); 
+        
+        // Check if reCAPTCHA is verified
+        if (!isRecaptchaVerified) {
+            alert('Please complete the reCAPTCHA verification.');
+            return;
+        }
+
         handleSubmit(e);
 
         emailjs
@@ -387,10 +412,25 @@ function ContactForm() {
                                         />
                                     </div>
                                 </div>
+                                
+                                {/* reCAPTCHA */}
+                                <div className="sm:col-span-2">
+                                    <ReCaptcha 
+                                        siteKey={RECAPTCHA_SITE_KEY}
+                                        onVerify={handleRecaptchaVerify}
+                                        onExpire={handleRecaptchaExpire}
+                                    />
+                                </div>
+                                
                                 <div className="sm:col-span-2 sm:flex sm:justify-end">
                                     <button
                                         type="submit"
-                                        className="mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-blue-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 sm:w-auto"
+                                        disabled={!isRecaptchaVerified}
+                                        className={`mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent px-6 py-3 text-base font-medium text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 sm:w-auto ${
+                                            isRecaptchaVerified 
+                                                ? 'bg-blue-600 hover:bg-blue-500' 
+                                                : 'bg-gray-400 cursor-not-allowed'
+                                        }`}
                                     >
                                         Submit
                                     </button>

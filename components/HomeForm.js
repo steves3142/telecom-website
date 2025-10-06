@@ -3,15 +3,20 @@ import emailjs from '@emailjs/browser';
 import { Transition } from '@headlessui/react'
 import { CheckCircleIcon } from '@heroicons/react/24/outline'
 import { XMarkIcon } from '@heroicons/react/20/solid'
+import ReCaptcha from './ReCaptcha';
 
 function ClientSubmitForm() {
     const form = useRef()
     const [show, setShow] = useState(false)
+    const [recaptchaToken, setRecaptchaToken] = useState(null)
+    const [isRecaptchaVerified, setIsRecaptchaVerified] = useState(false)
+
+    // Add your reCAPTCHA site key here
+    const RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || 'your-site-key-here'
 
     function toggleShow() {
         setShow(true)
     }
-
 
     const initialForm = {
         from_name: '', // first name
@@ -26,14 +31,33 @@ function ClientSubmitForm() {
 
     const handleSubmit = (e) => {
         setFormState(initialForm);
+        setRecaptchaToken(null);
+        setIsRecaptchaVerified(false);
     }
 
     const handleChange = (event) => {
         setFormState({ ...formState, [event.target.id]: event.target.value })
     }
 
+    const handleRecaptchaVerify = (token) => {
+        setRecaptchaToken(token);
+        setIsRecaptchaVerified(true);
+    }
+
+    const handleRecaptchaExpire = () => {
+        setRecaptchaToken(null);
+        setIsRecaptchaVerified(false);
+    }
+
     const sendEmail = (e) => {
         e.preventDefault();
+        
+        // Check if reCAPTCHA is verified
+        if (!isRecaptchaVerified) {
+            alert('Please complete the reCAPTCHA verification.');
+            return;
+        }
+        
         handleSubmit(e); 
 
         emailjs
@@ -107,7 +131,6 @@ function ClientSubmitForm() {
                             MSNT Telecom LLC is licensed and provides a full portfolio of services in more than 13 states nationwide. For more information about services and to find out about where we are currently licensed, please submit the form below to reach out to our team.
                         </p>
                         <form ref={form} onSubmit={sendEmail} className="mt-16">
-                            {/* <form action="#" method="" className="mt-16" onSubmit={sendEmail}> */}
                             <div className="grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2">
                                 <div>
                                     <label htmlFor="from_name" className="block text-sm font-semibold leading-6 text-gray-900">
@@ -216,12 +239,26 @@ function ClientSubmitForm() {
                                         />
                                     </div>
                                 </div>
+                                
+                                {/* reCAPTCHA */}
+                                <div className="sm:col-span-2">
+                                    <ReCaptcha 
+                                        siteKey={RECAPTCHA_SITE_KEY}
+                                        onVerify={handleRecaptchaVerify}
+                                        onExpire={handleRecaptchaExpire}
+                                    />
+                                </div>
                             </div>
                             <div className="mt-10 flex justify-end border-t border-gray-900/10 pt-8">
                                 <button
                                     type="submit"
                                     value="Send"
-                                    className="mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-blue-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 sm:w-auto"
+                                    disabled={!isRecaptchaVerified}
+                                    className={`mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent px-6 py-3 text-base font-medium text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 sm:w-auto ${
+                                        isRecaptchaVerified 
+                                            ? 'bg-blue-600 hover:bg-blue-500' 
+                                            : 'bg-gray-400 cursor-not-allowed'
+                                    }`}
                                 >
                                     Send message
                                 </button>
