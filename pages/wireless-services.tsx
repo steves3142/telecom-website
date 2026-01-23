@@ -93,20 +93,16 @@ const Wireless = ({ skills, experiences }: Props) => {
                 <h2 className="sr-only">Plans</h2>
 
                 {/* Cards */}
-                <div className="relative mx-auto mt-8 max-w-2xl px-4 pb-8 sm:mt-12 sm:px-6 lg:max-w-7xl lg:px-8 lg:pb-0">
-                  {/* Decorative background */}
-                  <div
-                    aria-hidden="true"
-                    className="absolute inset-0 top-4 bottom-6 left-8 right-8 hidden rounded-tl-lg rounded-tr-lg bg-blue-900 lg:block"
-                  />
+                <div className="relative mx-auto mt-8 max-w-2xl px-4 pb-8 sm:mt-12 sm:px-6 lg:max-w-4xl lg:px-8 lg:pb-0">
+                  {/* Decorative background - removed since we only have one card now */}
 
-                  <div className="relative space-y-6 lg:grid lg:grid-cols-2 lg:space-y-0">
+                  <div className="relative space-y-6 lg:flex lg:justify-center">
                     {plans.map((plan) => (
                       <div
                         key={plan.title}
                         className={classNames(
                           plan.featured ? 'bg-white ring-2 ring-blue-800 shadow-md' : 'bg-blue-800 lg:bg-transparent',
-                          'pt-6 px-6 pb-3 rounded-lg lg:px-8 lg:pt-12'
+                          'pt-6 px-6 pb-3 rounded-lg lg:px-8 lg:pt-12 lg:max-w-2xl lg:w-full'
                         )}
                       >
                         <div>
