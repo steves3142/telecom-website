@@ -35,24 +35,24 @@ const plans = [
       { id: 12, value: 'Temporary Tower' },
     ],
   },
-  {
-    title: 'CIVIL & OTHER SERVICES',
-    featured: true,
-    description: '',
-    mainFeatures: [
-      { id: 1, value: 'Concrete Repair and Restoration' },
-      { id: 2, value: 'Rock Saw, Directional Boring, Trenching' },
-      { id: 3, value: 'Landscaping' },
-      { id: 4, value: 'Mule Tape and Locate Tape Installation' },
-      { id: 5, value: 'Utility Coordination & Design' },
-      { id: 6, value: 'Outdoor Stealthing installation' },
-      { id: 7, value: 'Excavation' },
-      { id: 8, value: 'Steel Installation' },
-      { id: 9, value: 'Hand Hole and Vault Installation' },
-      { id: 10, value: 'Utility Locates' },
-      { id: 11, value: 'HVAC Installations, upgrades, and maintenance' }
-    ],
-  }
+  // {
+  //   title: 'CIVIL & OTHER SERVICES',
+  //   featured: true,
+  //   description: '',
+  //   mainFeatures: [
+  //     { id: 1, value: 'Concrete Repair and Restoration' },
+  //     { id: 2, value: 'Rock Saw, Directional Boring, Trenching' },
+  //     { id: 3, value: 'Landscaping' },
+  //     { id: 4, value: 'Mule Tape and Locate Tape Installation' },
+  //     { id: 5, value: 'Utility Coordination & Design' },
+  //     { id: 6, value: 'Outdoor Stealthing installation' },
+  //     { id: 7, value: 'Excavation' },
+  //     { id: 8, value: 'Steel Installation' },
+  //     { id: 9, value: 'Hand Hole and Vault Installation' },
+  //     { id: 10, value: 'Utility Locates' },
+  //     { id: 11, value: 'HVAC Installations, upgrades, and maintenance' }
+  //   },
+  // }
 ]
 
 function classNames(...classes) {
