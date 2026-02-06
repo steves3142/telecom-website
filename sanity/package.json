@@ -2,6 +2,9 @@
   "name": "msnt-website-build",
   "private": true,
   "version": "1.0.0",
+  "resolutions": {
+    "semver": "^7.5.4"
+  },
   "description": "",
   "main": "package.json",
   "author": "Steve S <helixdeveloper1@gmail.com>",
